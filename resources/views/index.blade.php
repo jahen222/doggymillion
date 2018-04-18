@@ -8,65 +8,65 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- favicon
-		============================================ -->		
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-		
+		============================================ -->
+        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('html_front/img/favicon.ico') }}">
+
 		<!-- Google Fonts
-		============================================ -->		
+		============================================ -->
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500italic,500,400italic,700italic,900,100,300' rel='stylesheet' type='text/css'>
 	    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,900' rel='stylesheet' type='text/css'>
-	   
-		<!-- Bootstrap CSS
-		============================================ -->		
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+
 		<!-- Bootstrap CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ asset('html_front/css/bootstrap.min.css') }}">
+		<!-- Bootstrap CSS
+		============================================ -->
+        <link rel="stylesheet" href="{{ asset('html_front/css/font-awesome.min.css') }}">
 		<!-- owl.carousel CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/owl.theme.css">
-        <link rel="stylesheet" href="css/owl.transitions.css">
+        <link rel="stylesheet" href="{{ asset('html_front/css/owl.carousel.css') }}">
+        <link rel="stylesheet" href="{{ asset('html_front/css/owl.theme.css') }}">
+        <link rel="stylesheet" href="{{ asset('html_front/css/owl.transitions.css') }}">
 		<!-- nivo slider CSS
 		============================================ -->
-		<link rel="stylesheet" href="lib/css/nivo-slider.css" type="text/css" />
-		<link rel="stylesheet" href="lib/css/preview.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="{{ asset('html_front/lib/css/nivo-slider.css') }}" type="text/css" />
+		<link rel="stylesheet" href="{{ asset('html_front/lib/css/preview.css') }}" type="text/css" media="screen" />
 		<!-- jquery-ui CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="{{ asset('html_front/css/jquery-ui.css') }}">
 		<!-- meanmenu CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/meanmenu.min.css">
+        <link rel="stylesheet" href="{{ asset('html_front/css/meanmenu.min.css') }}">
 		<!-- animate CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="{{ asset('html_front/css/animate.css') }}">
 		<!-- normalize CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="{{ asset('html_front/css/normalize.css') }}">
 		<!-- main CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="{{ asset('html_front/css/main.css') }}">
 		<!-- shortcodes CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/shortcodes/shortcodes.css">
+        <link rel="stylesheet" href="{{ asset('html_front/css/shortcodes/shortcodes.css') }}">
 		<!-- style CSS
 		============================================ -->
-        <link rel="stylesheet" href="style.css">
-        <!-- Custom - Theme Color CSS 
+        <link rel="stylesheet" href="{{ asset('html_front/style.css') }}">
+        <!-- Custom - Theme Color CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/color-two.css">
+        <link rel="stylesheet" href="{{ asset('html_front/css/color-two.css') }}">
 		<!-- responsive CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="{{ asset('html_front/css/responsive.css') }}">
 		<!-- modernizr JS
-		============================================ -->			
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		============================================ -->
+        <script src="{{ asset('html_front/js/vendor/modernizr-2.8.3.min.js') }}"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-		
+
 		<div class="wrapper home-v2">
             <!-- Start Header Area -->
 			<div class="spectar"></div>
@@ -80,7 +80,7 @@
 									<div class="header-top-left header-top-info">
 										<p><a href="#"><i class="fa fa-lock"></i>Login / Register</a></p>
 										<p><a href="tel:+3211234567"><i class="fa fa-phone"></i>+321.123.4567</a></p>
-										<p><a href="mailto:admib@bootexperts.com"><i class="fa fa-envelope"></i>admib@bootexperts.com</a></p>  
+										<p><a href="mailto:admib@bootexperts.com"><i class="fa fa-envelope"></i>admib@bootexperts.com</a></p>
 									</div>
 								</div>
 								<div class="col-md-5">
@@ -125,7 +125,7 @@
 													</div>
 													<div class="total-amount fix">
 														<p>SUBTOTAL: </p><span>$330.00 </span>
-														
+
 													</div>
 													<div class="action-cart">
 														<a class="viewcart" href="#">View Cart</a>
@@ -156,7 +156,7 @@
                                                         <li><a href="index-3.html">Home Three</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="about-us.html">ABOUT </a></li>                  
+                                                <li><a href="about-us.html">ABOUT </a></li>
                                                 <li><a href="#">SHOP <span class="indicator"><i class="fa fa-angle-down"></i></span></a>
                                                     <ul class="estut-dropdown">
                                                         <li><a href="shop-fullwidth.html">Shop Fullwidth</a></li>
@@ -180,7 +180,7 @@
                                                 </li>
                                                 <li class="menu-logo-2">
 				                                    <div class="header-logo-2">
-														<a href="index-2.html"><img src="img/logo/2.png" alt="main logo" /></a>
+														<a href="index-2.html"><img src="{{ asset('assets/256_pixels/1_Primary_logo_on_transparent_256.png') }}" alt="main logo" /></a>
 													</div>
                                                 </li>
                                                 <li><a href="#">Bloag <span class="indicator"><i class="fa fa-angle-down"></i></span></a>
@@ -193,7 +193,7 @@
 										                <li><a href="blog-details.html">Blog Details</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="team.html">Our Team</a></li> 
+                                                <li><a href="team.html">Our Team</a></li>
 										        <li><a href="course-details.html">COURSES</a></li>
 										        <li><a href="contact-us.html">CONTACT</a></li>
                                             </ul>
@@ -205,7 +205,7 @@
 							<div class="row">
 								<div class="col-sm-3 hidden-md hidden-lg">
 									<div class="mobile-logo">
-										<a href="index-2.html"><img src="img/logo/1.png" alt="main logo" /></a>
+										<a href="index-2.html"><img src="{{ asset('html_front/img/logo/1.png') }}" alt="main logo" /></a>
 									</div>
 								</div>
 								<div class="col-sm-9 hidden-md hidden-lg">
@@ -220,7 +220,7 @@
 														<li><a href="index-3.html">Home Shop 3</a></li>
 													</ul>
 												</li>
-												<li><a href="about-us.html">ABOUT </a></li> 
+												<li><a href="about-us.html">ABOUT </a></li>
 										        <li><a href="team.html">Our Team</a></li>
 												<li><a href="shop-fullwidth.html">Shop Pages</a>
 													<ul>
@@ -270,9 +270,9 @@
 			<!-- Start Slider Area -->
 			<section class="slider-area slide-v2">
 				<div class="bend niceties preview-2">
-					<div id="ensign-nivoslider" class="slides">	
-						<img src="img/sliders/bg-3.jpg" alt="" title="#slider-direction-1"  />
-						<img src="img/sliders/bg-4.jpg" alt="" title="#slider-direction-2"  />
+					<div id="ensign-nivoslider" class="slides">
+						<img src="{{ asset('assets/Imagenes/slide1.jpg') }}" alt="" title="#slider-direction-1"  />
+						<img src="{{ asset('assets/Imagenes/slide2.jpg') }}" alt="" title="#slider-direction-2"  />
 					</div>
 					<!-- direction 1 -->
 					<div id="slider-direction-1" class="slider-direction slider-one">
@@ -346,7 +346,7 @@
 											<option value="What do you want to learn today?">What do you want to learn today?</option>
 											<option value="Should I call or email you?">Should I call or email you?</option>
 											<option value="What is the meaning of this?">What is the meaning of this?</option>
-										</select> 
+										</select>
 										<input type="text" placeholder="Keyword"/>
 										<input type="submit" value="search" class="estut-btn-v2"/>
 									</form>
@@ -376,12 +376,12 @@
 								<div class="single-service">
 									<div class="single-service-inner">
 										<div class="service-box-front">
-											<img src="img/icon/service/1.png" alt="service icon">
+											<img src="{{ asset('html_front/img/icon/service/1.png') }}" alt="service icon">
 											<h3 class="ser-front-heading">drawing Lessons</h3>
 										</div>
 										<div class="service-box-back">
 											<h3 class="ser-back-heading">drawing Lessons</h3>
-											<p class="ser-back-content">Lorem ipsum dolor sit amet, consectetur 
+											<p class="ser-back-content">Lorem ipsum dolor sit amet, consectetur
 											adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 											<a href="#" class="ser-link">Learn More <i class="fa fa-caret-right"></i></a>
 										</div>
@@ -394,12 +394,12 @@
 								<div class="single-service">
 									<div class="single-service-inner">
 										<div class="service-box-front">
-											<img src="img/icon/service/2.png" alt="service icon">
+											<img src="{{ asset('html_front/img/icon/service/2.png') }}" alt="service icon">
 											<h3 class="ser-front-heading">English Lessons</h3>
 										</div>
 										<div class="service-box-back">
 											<h3 class="ser-back-heading">drawing Lessons</h3>
-											<p class="ser-back-content">Lorem ipsum dolor sit amet, consectetur 
+											<p class="ser-back-content">Lorem ipsum dolor sit amet, consectetur
 											adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 											<a href="#" class="ser-link">Learn More <i class="fa fa-caret-right"></i></a>
 										</div>
@@ -412,12 +412,12 @@
 								<div class="single-service">
 									<div class="single-service-inner">
 										<div class="service-box-front">
-											<img src="img/icon/service/3.png" alt="service icon">
+											<img src="{{ asset('html_front/img/icon/service/3.png') }}" alt="service icon">
 											<h3 class="ser-front-heading">drawing Lessons</h3>
 										</div>
 										<div class="service-box-back">
 											<h3 class="ser-back-heading">math lessons</h3>
-											<p class="ser-back-content">Lorem ipsum dolor sit amet, consectetur 
+											<p class="ser-back-content">Lorem ipsum dolor sit amet, consectetur
 											adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 											<a href="#" class="ser-link">Learn More <i class="fa fa-caret-right"></i></a>
 										</div>
@@ -430,12 +430,12 @@
 								<div class="single-service">
 									<div class="single-service-inner">
 										<div class="service-box-front">
-											<img src="img/icon/service/4.png" alt="service icon">
+											<img src="{{ asset('html_front/img/icon/service/4.png') }}" alt="service icon">
 											<h3 class="ser-front-heading">drawing Lessons</h3>
 										</div>
 										<div class="service-box-back">
 											<h3 class="ser-back-heading">drawing Lessons</h3>
-											<p class="ser-back-content">Lorem ipsum dolor sit amet, consectetur 
+											<p class="ser-back-content">Lorem ipsum dolor sit amet, consectetur
 											adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 											<a href="#" class="ser-link">Learn More <i class="fa fa-caret-right"></i></a>
 										</div>
@@ -448,12 +448,12 @@
 								<div class="single-service">
 									<div class="single-service-inner">
 										<div class="service-box-front">
-											<img src="img/icon/service/5.png" alt="service icon">
+											<img src="{{ asset('html_front/img/icon/service/5.png') }}" alt="service icon">
 											<h3 class="ser-front-heading">drawing Lessons</h3>
 										</div>
 										<div class="service-box-back">
 											<h3 class="ser-back-heading">science Lessons</h3>
-											<p class="ser-back-content">Lorem ipsum dolor sit amet, consectetur 
+											<p class="ser-back-content">Lorem ipsum dolor sit amet, consectetur
 											adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 											<a href="#" class="ser-link">Learn More <i class="fa fa-caret-right"></i></a>
 										</div>
@@ -466,12 +466,12 @@
 								<div class="single-service">
 									<div class="single-service-inner">
 										<div class="service-box-front">
-											<img src="img/icon/service/6.png" alt="service icon">
+											<img src="{{ asset('html_front/img/icon/service/6.png') }}" alt="service icon">
 											<h3 class="ser-front-heading">drawing Lessons</h3>
 										</div>
 										<div class="service-box-back">
 											<h3 class="ser-back-heading">drawing Lessons</h3>
-											<p class="ser-back-content">Lorem ipsum dolor sit amet, consectetur 
+											<p class="ser-back-content">Lorem ipsum dolor sit amet, consectetur
 											adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 											<a href="#" class="ser-link">Learn More <i class="fa fa-caret-right"></i></a>
 										</div>
@@ -481,7 +481,7 @@
 							<!--Emd single service -->
 						</div>
 					</div>
-					<!-- Start Counter Area -->	
+					<!-- Start Counter Area -->
 					<div class="row padding-t100">
 						<div class="col-md-12 text-center">
 							<div class="counter-list">
@@ -512,522 +512,18 @@
 							</div>
 						</div>
 					</div>
-					<!-- End Counter Area -->	
+					<!-- End Counter Area -->
 				</div>
 			</section>
 			<!-- End service v2 Area -->
-			<!-- Start Team/Teacher v1 Area -->
-			<section class="team-area v1 bg-1 overlay-bg padding100">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="team-wrap fix">
-								<div class="team-dis">
-									<div class="area-headding color-white text-left">
-										<h2 class="section-title">Meet Our Teachers</h2>
-										<p>Aenean porta tellus ut pellentesque tempus. In et ante at magna euismod finibus sit amet eget mauris. Mauris lobortis, ex eget pretium vestibulum, neque nisl facilisis mauris.</p><p>Praesent a iaculis augue, vitae suscipit est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at est nunc. Suspendisse gravida sit amet lacus sed lobortis.</p>
-										<a href="#" class="estut-btn-v2 color-v2">find more</a>
-									</div>
-								</div>
-								<div class="team-member-wrap fix">
-									<!-- Single Member -->
-									<div class="single-member">
-										<div class="member-img">
-											<img class="img-circle" src="img/team/1.jpg" alt="Teacher Image"/>
-										</div>
-										<div class="member-info">
-											<h5><a href="#">lena rose</a></h5>
-											<p>Career Counselor</p>
-										</div>
-									</div>
-									<!-- /Single Member -->
-									<!-- Single Member -->
-									<div class="single-member">
-										<div class="member-img">
-											<img class="img-circle" src="img/team/2.jpg" alt="Teacher Image"/>
-										</div>
-										<div class="member-info">
-											<h5><a href="#">lena rose</a></h5>
-											<p>Career Counselor</p>
-										</div>
-									</div>
-									<!-- /Single Member -->
-									<!-- Single Member -->
-									<div class="single-member">
-										<div class="member-img">
-											<img class="img-circle" src="img/team/3.jpg" alt="Teacher Image"/>
-										</div>
-										<div class="member-info">
-											<h5><a href="#">lena rose</a></h5>
-											<p>Career Counselor</p>
-										</div>
-									</div>
-									<!-- /Single Member -->
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>	
-			<!-- End Team/Teacher v1 Area -->
-			<!-- Start Popular Courses v2 Area -->
-			<section class="populer-courses-area-v2 padding100 bg-gray">
-				<div class="container">
-					<!-- Start Area headding -->
-					<div class="row">
-						<div class="col-md-12">
-							<div class="area-headding text-center">
-								<h2 class="section-title">Popular Courses</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius consequat magna, id<br /> molestie ipsum volutpat quis. Suspendisse consectetur fringilla suctus.</p>
-							</div>
-						</div>
-					</div>
-					<!-- End Area headding -->
-					<div class="clear"></div>
-					<div class="populer-courses-container owl-pagination-default style-2">
-						<!-- Start Populer Courses Single page -->
-						<div class="populer-courses-list clear">
-							<!-- Start Single Courses -->
-							<div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
-								<div class="single-course clear">
-									<div class="course-thumb">
-										<img src="img/courses/11.jpg" alt="courses thumb" />
-										<div class="price-sticker">
-											<span>$54.20</span>
-										</div>
-									</div>
-									<div class="course-info">
-										<div class="course-content">
-											<h2 class="course-title"><a href="#">Urna Eget Lacinia Eleifend </a></h2>
-											<div class="author">by <a href="#">John Doe</a></div>
-											<p>Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Luptate esse cillum dolore eu.</p>
-										</div>
-										<div class="rating">
-											<ul>
-												<li>
-													<p><span><i class="fa fa-book"></i></span>5 Lessons</p>
-												</li>
-												<li>
-													<div class="star">
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star-half-o"></i></span>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End Single Courses -->
-							<!-- Start Single Courses -->
-							<div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
-								<div class="single-course clear">
-									<div class="course-thumb">
-										<img src="img/courses/12.jpg" alt="courses thumb" />
-										<div class="price-sticker">
-											<span>$24.20</span>
-										</div>
-									</div>
-									<div class="course-info">
-										<div class="course-content">
-											<h2 class="course-title"><a href="#">Urna Eget Lacinia Eleifend </a></h2>
-											<div class="author">by <a href="#">John Doe</a></div>
-											<p>Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Luptate esse cillum dolore eu.</p>
-										</div>
-										<div class="rating">
-											<ul>
-												<li>
-													<p><span><i class="fa fa-book"></i></span>5 Lessons</p>
-												</li>
-												<li>
-													<div class="star">
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star-half-o"></i></span>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End Single Courses -->
-							<!-- Start Single Courses -->
-							<div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
-								<div class="single-course clear">
-									<div class="course-thumb">
-										<img src="img/courses/13.jpg" alt="courses thumb" />
-										<div class="price-sticker">
-											<span>$38.20</span>
-										</div>
-									</div>
-									<div class="course-info">
-										<div class="course-content">
-											<h2 class="course-title"><a href="#">Urna Eget Lacinia Eleifend </a></h2>
-											<div class="author">by <a href="#">John Doe</a></div>
-											<p>Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Luptate esse cillum dolore eu.</p>
-										</div>
-										<div class="rating">
-											<ul>
-												<li>
-													<p><span><i class="fa fa-book"></i></span>5 Lessons</p>
-												</li>
-												<li>
-													<div class="star">
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star-half-o"></i></span>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End Single Courses -->
-							<!-- Start Single Courses -->
-							<div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
-								<div class="single-course clear">
-									<div class="course-thumb">
-										<img src="img/courses/14.jpg" alt="courses thumb" />
-										<div class="price-sticker">
-											<span>$68.20</span>
-										</div>
-									</div>
-									<div class="course-info">
-										<div class="course-content">
-											<h2 class="course-title"><a href="#">Urna Eget Lacinia Eleifend </a></h2>
-											<div class="author">by <a href="#">John Doe</a></div>
-											<p>Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Luptate esse cillum dolore eu.</p>
-										</div>
-										<div class="rating">
-											<ul>
-												<li>
-													<p><span><i class="fa fa-book"></i></span>5 Lessons</p>
-												</li>
-												<li>
-													<div class="star">
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star-half-o"></i></span>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End Single Courses -->
-						</div>
-						<!-- End Populer Courses Single page -->
-						<!-- Start Populer Courses Single page -->
-						<div class="populer-courses-list clear">
-							<!-- Start Single Courses -->
-							<div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
-								<div class="single-course clear">
-									<div class="course-thumb">
-										<img src="img/courses/11.jpg" alt="courses thumb" />
-										<div class="price-sticker">
-											<span>$54.20</span>
-										</div>
-									</div>
-									<div class="course-info">
-										<div class="course-content">
-											<h2 class="course-title"><a href="#">Urna Eget Lacinia Eleifend </a></h2>
-											<div class="author">by <a href="#">John Doe</a></div>
-											<p>Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Luptate esse cillum dolore eu.</p>
-										</div>
-										<div class="rating">
-											<ul>
-												<li>
-													<p><span><i class="fa fa-book"></i></span>5 Lessons</p>
-												</li>
-												<li>
-													<div class="star">
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star-half-o"></i></span>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End Single Courses -->
-							<!-- Start Single Courses -->
-							<div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
-								<div class="single-course clear">
-									<div class="course-thumb">
-										<img src="img/courses/12.jpg" alt="courses thumb" />
-										<div class="price-sticker">
-											<span>$24.20</span>
-										</div>
-									</div>
-									<div class="course-info">
-										<div class="course-content">
-											<h2 class="course-title"><a href="#">Urna Eget Lacinia Eleifend </a></h2>
-											<div class="author">by <a href="#">John Doe</a></div>
-											<p>Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Luptate esse cillum dolore eu.</p>
-										</div>
-										<div class="rating">
-											<ul>
-												<li>
-													<p><span><i class="fa fa-book"></i></span>5 Lessons</p>
-												</li>
-												<li>
-													<div class="star">
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star-half-o"></i></span>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End Single Courses -->
-							<!-- Start Single Courses -->
-							<div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
-								<div class="single-course clear">
-									<div class="course-thumb">
-										<img src="img/courses/13.jpg" alt="courses thumb" />
-										<div class="price-sticker">
-											<span>$38.20</span>
-										</div>
-									</div>
-									<div class="course-info">
-										<div class="course-content">
-											<h2 class="course-title"><a href="#">Urna Eget Lacinia Eleifend </a></h2>
-											<div class="author">by <a href="#">John Doe</a></div>
-											<p>Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Luptate esse cillum dolore eu.</p>
-										</div>
-										<div class="rating">
-											<ul>
-												<li>
-													<p><span><i class="fa fa-book"></i></span>5 Lessons</p>
-												</li>
-												<li>
-													<div class="star">
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star-half-o"></i></span>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End Single Courses -->
-							<!-- Start Single Courses -->
-							<div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
-								<div class="single-course clear">
-									<div class="course-thumb">
-										<img src="img/courses/14.jpg" alt="courses thumb" />
-										<div class="price-sticker">
-											<span>$68.20</span>
-										</div>
-									</div>
-									<div class="course-info">
-										<div class="course-content">
-											<h2 class="course-title"><a href="#">Urna Eget Lacinia Eleifend </a></h2>
-											<div class="author">by <a href="#">John Doe</a></div>
-											<p>Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Luptate esse cillum dolore eu.</p>
-										</div>
-										<div class="rating">
-											<ul>
-												<li>
-													<p><span><i class="fa fa-book"></i></span>5 Lessons</p>
-												</li>
-												<li>
-													<div class="star">
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star-half-o"></i></span>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End Single Courses -->
-						</div>
-						<!-- End Populer Courses Single page -->
-						<!-- Start Populer Courses Single page -->
-						<div class="populer-courses-list clear">
-							<!-- Start Single Courses -->
-							<div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
-								<div class="single-course clear">
-									<div class="course-thumb">
-										<img src="img/courses/11.jpg" alt="courses thumb" />
-										<div class="price-sticker">
-											<span>$54.20</span>
-										</div>
-									</div>
-									<div class="course-info">
-										<div class="course-content">
-											<h2 class="course-title"><a href="#">Urna Eget Lacinia Eleifend </a></h2>
-											<div class="author">by <a href="#">John Doe</a></div>
-											<p>Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Luptate esse cillum dolore eu.</p>
-										</div>
-										<div class="rating">
-											<ul>
-												<li>
-													<p><span><i class="fa fa-book"></i></span>5 Lessons</p>
-												</li>
-												<li>
-													<div class="star">
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star-half-o"></i></span>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End Single Courses -->
-							<!-- Start Single Courses -->
-							<div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
-								<div class="single-course clear">
-									<div class="course-thumb">
-										<img src="img/courses/12.jpg" alt="courses thumb" />
-										<div class="price-sticker">
-											<span>$24.20</span>
-										</div>
-									</div>
-									<div class="course-info">
-										<div class="course-content">
-											<h2 class="course-title"><a href="#">Urna Eget Lacinia Eleifend </a></h2>
-											<div class="author">by <a href="#">John Doe</a></div>
-											<p>Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Luptate esse cillum dolore eu.</p>
-										</div>
-										<div class="rating">
-											<ul>
-												<li>
-													<p><span><i class="fa fa-book"></i></span>5 Lessons</p>
-												</li>
-												<li>
-													<div class="star">
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star-half-o"></i></span>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End Single Courses -->
-							<!-- Start Single Courses -->
-							<div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
-								<div class="single-course clear">
-									<div class="course-thumb">
-										<img src="img/courses/13.jpg" alt="courses thumb" />
-										<div class="price-sticker">
-											<span>$38.20</span>
-										</div>
-									</div>
-									<div class="course-info">
-										<div class="course-content">
-											<h2 class="course-title"><a href="#">Urna Eget Lacinia Eleifend </a></h2>
-											<div class="author">by <a href="#">John Doe</a></div>
-											<p>Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Luptate esse cillum dolore eu.</p>
-										</div>
-										<div class="rating">
-											<ul>
-												<li>
-													<p><span><i class="fa fa-book"></i></span>5 Lessons</p>
-												</li>
-												<li>
-													<div class="star">
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star-half-o"></i></span>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End Single Courses -->
-							<!-- Start Single Courses -->
-							<div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
-								<div class="single-course clear">
-									<div class="course-thumb">
-										<img src="img/courses/14.jpg" alt="courses thumb" />
-										<div class="price-sticker">
-											<span>$68.20</span>
-										</div>
-									</div>
-									<div class="course-info">
-										<div class="course-content">
-											<h2 class="course-title"><a href="#">Urna Eget Lacinia Eleifend </a></h2>
-											<div class="author">by <a href="#">John Doe</a></div>
-											<p>Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Luptate esse cillum dolore eu.</p>
-										</div>
-										<div class="rating">
-											<ul>
-												<li>
-													<p><span><i class="fa fa-book"></i></span>5 Lessons</p>
-												</li>
-												<li>
-													<div class="star">
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star"></i></span>
-														<span class="yes"><i class="fa fa-star-half-o"></i></span>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End Single Courses -->
-						</div>
-						<!-- End Populer Courses Single page -->
-					</div>
-				</div>
-			</section>	
-			<!-- End Popular Courses v2 Area -->
+
 			<!-- Start Testimonials-v2 Area -->
 			<div class="testimonial-area bg-2 overlay-bg padding100">
 				<div class="testimonial-container owl-controls-style-1">
 					<!-- Start Single Testimonial -->
 					<div class="single-testimonial text-center">
 						<div class="client-pic">
-							<img class="img-circle" src="img/testimonial/2.png" alt="" />
+							<img class="img-circle" src="{{ asset('html_front/img/testimonial/2.png') }}" alt="" />
 						</div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing. Cramsuada lobortis semper. Vestibulum <br /> sagittis,felis in accumsans is a faubus, orci leo cursus felis, nec mattis.</p>
 						<p class="client-name">Aslam Hasib</p>
@@ -1037,7 +533,7 @@
 					<!-- Start Single Testimonial -->
 					<div class="single-testimonial text-center">
 						<div class="client-pic">
-							<img class="img-circle" src="img/testimonial/2.png" alt="" />
+							<img class="img-circle" src="{{ asset('html_front/img/testimonial/2.png') }}" alt="" />
 						</div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing. Cramsuada lobortis semper. Vestibulum <br /> sagittis,felis in accumsans is a faubus, orci leo cursus felis, nec mattis.</p>
 						<p class="client-name">Salim Rana</p>
@@ -1047,7 +543,7 @@
 					<!-- Start Single Testimonial -->
 					<div class="single-testimonial text-center">
 						<div class="client-pic">
-							<img class="img-circle" src="img/testimonial/2.png" alt="" />
+							<img class="img-circle" src="{{ asset('html_front/img/testimonial/2.png') }}" alt="" />
 						</div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing. Cramsuada lobortis semper. Vestibulum <br /> sagittis,felis in accumsans is a faubus, orci leo cursus felis, nec mattis.</p>
 						<p class="client-name">BM RAFIQ</p>
@@ -1057,1213 +553,7 @@
 				</div>
 			</div>
 			<!-- End Testimonials-v2 Area -->
-			<!-- Start Photo Gallery Area -->
-			<section class="photo-gallery-area">
-				<div class="photo-wrap clear">
-					<div class="single-photo">
-						<a href="#" target="_blank">
-							<img src="img/gallery/1.jpg" alt="gallery phpto" />
-						</a>
-					</div>
-					<div class="single-photo">
-						<a href="#" target="_blank">
-							<img src="img/gallery/2.jpg" alt="gallery phpto" />
-						</a>
-					</div>
-					<div class="single-photo">
-						<a href="#" target="_blank">
-							<img src="img/gallery/3.jpg" alt="gallery phpto" />
-						</a>
-					</div>
-					<div class="single-photo">
-						<a href="#" target="_blank">
-							<img src="img/gallery/4.jpg" alt="gallery phpto" />
-						</a>
-					</div>
-					<div class="single-photo">
-						<a href="#" target="_blank">
-							<img src="img/gallery/5.jpg" alt="gallery phpto" />
-						</a>
-					</div>
-					<div class="single-photo">
-						<a href="#" target="_blank">
-							<img src="img/gallery/6.jpg" alt="gallery phpto" />
-						</a>
-					</div>
-				</div>
-				<div class="see-all-photo">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-9 col-lg-9 col-sm-8 col-xs-12 text-left">
-								<h2 class="photo-gallery-headding">See All Our Estut Photo Gallery!</h2>
-							</div>
-							<div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 text-right">
-								<a href="#" class="estut-btn-v2 default-color">view gallery</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- End Photo Gallery Area -->
-			<!-- Start Online Shop Area -->
-			<section class="online-shopping-area padding100">
-				<div class="container">
-					<!-- Start Area headding -->
-					<div class="row">
-						<div class="col-md-12">
-							<div class="area-headding-pb0 text-center">
-								<h2 class="section-title">Shop Online</h2>
-							</div>
-						</div>
-					</div>
-					<!-- End Area headding -->
-					<!-- Start Filter Menu -->
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<div class="filter-menu text-center">
-								<ul class="nav nav-tabs" role="tablist">
-									<li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">All</a></li>
-									<li role="presentation"><a href="#accessories" aria-controls="accessories" role="tab" data-toggle="tab">accessories</a></li>
-									<li role="presentation"><a href="#uniform" aria-controls="uniform" role="tab" data-toggle="tab">uniform</a></li>
-									<li role="presentation"><a href="#storage" aria-controls="storage" role="tab" data-toggle="tab">storage</a></li>
-									<li role="presentation"><a href="#furniture" aria-controls="furniture" role="tab" data-toggle="tab">furniture</a></li>
-									<li role="presentation"><a href="#electronics" aria-controls="electronics" role="tab" data-toggle="tab">electronics</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- End Filter Menu -->
-					<!-- Start product List -->
-					<div class="row">
-						<div class="tab-content">
-							<!--Start All Product -->
-							<div role="tabpanel" class="tab-pane fade in active" id="all">
-								<div class="online-shop-list owl-pagination-default style-2">
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/27.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">accessories</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/19.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">Uniform</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/13.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">accessories</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/12.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">accessories</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/27.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">accessories</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/25.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">accessories</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/3.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">uniform</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/4.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">storage</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/5.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">furniture</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/6.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">storage</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-								</div>
-							</div>
-							<!--End All Product -->
-							<!--Start accessories category-->
-							<div role="tabpanel" class="tab-pane fade" id="accessories">
-								<div class="online-shop-list owl-pagination-default">
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/7.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">accessories</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/8.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">accessories</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/9.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">accessories</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-								</div>
-							</div>
-							<!--End accessories category-->
-							<!--Start uniform category-->
-							<div role="tabpanel" class="tab-pane fade" id="uniform">
-								<div class="online-shop-list owl-pagination-default">
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/9.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">uniform</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/10.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">uniform</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/11.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">uniform</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/12.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">uniform</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/13.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">uniform</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-								</div>
-							</div>
-							<!-- End uniform category -->
-							<!-- Start storage category -->
-							<div role="tabpanel" class="tab-pane fade" id="storage">
-								<div class="online-shop-list owl-pagination-default">
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/14.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">storage</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/15.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">storage</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/16.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">storage</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-								</div>
-							</div>
-							<!-- End storage category -->
-							<!-- Start furniture category -->
-							<div role="tabpanel" class="tab-pane fade" id="furniture">
-								<div class="online-shop-list owl-pagination-default">
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/17.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">furniture</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/18.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">furniture</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/19.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">furniture</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/20.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">furniture</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/21.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">furniture</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-								</div>
-							</div>
-							<!-- End furniture category -->
-							<!-- Start electronics category -->
-							<div role="tabpanel" class="tab-pane fade" id="electronics">
-								<div class="online-shop-list owl-pagination-default">
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/22.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">electronics</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/23.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">electronics</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/24.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">electronics</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/25.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">electronics</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-									<!-- Start Single product -->
-									<div class="col-md-3">
-										<div class="single-product text-center">
-											<div class="pro-thumb overlay-bg">
-												<img src="img/product/26.jpg" alt="product img" />
-												<div class="hover-btn">
-													<ul class="action-buttons">
-														<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-														<li class="quickview"><a href="#" class="modal-view detail-link quickview" data-toggle="modal" data-target="#productModal"><i class="fa fa-eye"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="pro-info">
-												<p class="pro-category">electronics</p>
-												<h3 class="pro-title"><a href="#">Title Product Here</a></h3>
-												<div class="pro-rating star">
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star"></i></span>
-													<span class="yes"><i class="fa fa-star-half-o"></i></span>
-												</div>
-												<h3 class="pro-price">$17.20</h3>
-												<div class="pro-available-color">
-													<ul class="color-list">
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-														<li class="color"></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single product -->
-								</div>
-							</div>
-							<!-- End electronics category -->
-						</div>
-					</div>
-					<!-- End product List -->
-				</div>
-			</section>
-			<!-- End Online Shop Area -->	
-			<!-- Start Latest Blog Area -->	
+			<!-- Start Latest Blog Area -->
 			<section class="latest-blog-area-v2 bg-2 overlay-bg  padding100">
 				<div class="latest-blog-inner">
 					<div class="container">
@@ -2281,7 +571,7 @@
 								<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 									<div class="single-blog text-left bg-white">
 										<div class="blog-thumb overlay-bg">
-											<img src="img/blog/4.jpg" alt="blog img" />
+											<img src="{{ asset('html_front/img/blog/4.jpg') }}" alt="blog img" />
 										</div>
 										<div class="blog-info text-left">
 											<span class="blog-category c-green">Social Marketing</span>
@@ -2304,7 +594,7 @@
 								<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 									<div class="single-blog text-left bg-white">
 										<div class="blog-thumb overlay-bg">
-											<img src="img/blog/2.jpg" alt="blog img" />
+											<img src="{{ asset('html_front/img/blog/2.jpg') }}" alt="blog img" />
 										</div>
 										<div class="blog-info text-left">
 											<span class="blog-category c-yellow">Video Player</span>
@@ -2327,7 +617,7 @@
 								<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 									<div class="single-blog text-left bg-white">
 										<div class="blog-thumb overlay-bg">
-											<img src="img/blog/5.jpg" alt="blog img" />
+											<img src="{{ asset('html_front/img/blog/5.jpg') }}" alt="blog img" />
 										</div>
 										<div class="blog-info text-left">
 											<p class="blog-quote-content">Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Nam auctor erat nec mi euismod viverra. Morbi accumsan ipsum velit.</p>
@@ -2340,7 +630,7 @@
 								<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 									<div class="single-blog text-left bg-white">
 										<div class="blog-thumb overlay-bg">
-											<img src="img/blog/4.jpg" alt="blog img" />
+											<img src="{{ asset('html_front/img/blog/4.jpg') }}" alt="blog img" />
 										</div>
 										<div class="blog-info text-left">
 											<span class="blog-category c-green">Coding</span>
@@ -2363,7 +653,7 @@
 								<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 									<div class="single-blog text-left bg-white">
 										<div class="blog-thumb overlay-bg">
-											<img src="img/blog/2.jpg" alt="blog img" />
+											<img src="{{ asset('html_front/img/blog/2.jpg') }}" alt="blog img" />
 										</div>
 										<div class="blog-info text-left">
 											<span class="blog-category c-yellow">Video Player</span>
@@ -2386,7 +676,7 @@
 								<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 									<div class="single-blog text-left bg-white">
 										<div class="blog-thumb overlay-bg">
-											<img src="img/blog/6.jpg" alt="blog img" />
+											<img src="{{ asset('html_front/img/blog/6.jpg') }}" alt="blog img" />
 										</div>
 										<div class="blog-info text-left">
 											<p class="blog-quote-content">Pellentesque quis condimentum arcu, vel ornare nisi. Donec tellus elit, fringilla non ex id, tincidunt bibendum erat. Nam auctor erat nec mi euismod viverra. Morbi accumsan ipsum velit.</p>
@@ -2405,42 +695,42 @@
 			<div class="brand-logo-area solid-bg-2">
 				<div class="brand-list">
 					<div class="single-brand">
-						<a href="#"></a><img src="img/brand/1.png" alt="Brand Image" />
+						<a href="#"></a><img src="{{ asset('html_front/img/brand/1.png') }}" alt="Brand Image" />
 					</div>
 					<div class="single-brand">
-						<img src="img/brand/2.png" alt="Brand Image" />
+						<img src="{{ asset('html_front/img/brand/2.png') }}" alt="Brand Image" />
 					</div>
 					<div class="single-brand">
-						<img src="img/brand/3.png" alt="Brand Image" />
+						<img src="{{ asset('html_front/img/brand/3.png') }}" alt="Brand Image" />
 					</div>
 					<div class="single-brand">
-						<img src="img/brand/4.png" alt="Brand Image" />
+						<img src="{{ asset('html_front/img/brand/4.png') }}" alt="Brand Image" />
 					</div>
 					<div class="single-brand">
-						<img src="img/brand/5.png" alt="Brand Image" />
+						<img src="{{ asset('html_front/img/brand/5.png') }}" alt="Brand Image" />
 					</div>
 					<div class="single-brand">
-						<img src="img/brand/6.png" alt="Brand Image" />
+						<img src="{{ asset('html_front/img/brand/6.png') }}" alt="Brand Image" />
 					</div>
 					<div class="single-brand">
-						<img src="img/brand/3.png" alt="Brand Image" />
+						<img src="{{ asset('html_front/img/brand/3.png') }}" alt="Brand Image" />
 					</div>
 					<div class="single-brand">
-						<img src="img/brand/5.png" alt="Brand Image" />
+						<img src="{{ asset('html_front/img/brand/5.png') }}" alt="Brand Image" />
 					</div>
 				</div>
 			</div>
 			<!-- End Brands logo Area -->
-			<!-- Start  Footer  Area -->	
+			<!-- Start  Footer  Area -->
 			<footer id="footer-area">
-				<!-- Start Footer Top Area -->	
+				<!-- Start Footer Top Area -->
 				<div class="footer-top-area bg-1 overlay-bg padding50">
 					<div class="container">
 						<div class="row">
 							<div class="newsletter">
 								<div class="col-md-6 col-md-offset-3 text-center">
 									<div class="footer-logo">
-										<a href="index-2.html"><img src="img/logo/3.png" alt="footer Logo" /></a>
+										<a href="index-2.html"><img src="{{ asset('assets/256_pixels/1_Primary_logo_on_transparent_256.png') }}" alt="footer Logo" /></a>
 									</div>
 									<div class="newsletter-form">
 										<form action="#" method="get">
@@ -2518,12 +808,12 @@
 									<h3 class="widget-title">FOLLOW US @ INSTAGRAM</h3>
 									<div class="blog-flickr">
 										<ul>
-											<li><a href="#"><img src="img/blog/flickr/1.jpg" alt=""></a></li>
-											<li><a href="#"><img src="img/blog/flickr/2.jpg" alt=""></a></li>
-											<li><a href="#"><img src="img/blog/flickr/3.jpg" alt=""></a></li>
-											<li><a href="#"><img src="img/blog/flickr/4.jpg" alt=""></a></li>
-											<li><a href="#"><img src="img/blog/flickr/5.jpg" alt=""></a></li>
-											<li><a href="#"><img src="img/blog/flickr/6.jpg" alt=""></a></li>
+											<li><a href="#"><img src="{{ asset('html_front/img/blog/flickr/1.jpg') }}" alt=""></a></li>
+											<li><a href="#"><img src="{{ asset('html_front/img/blog/flickr/2.jpg') }}" alt=""></a></li>
+											<li><a href="#"><img src="{{ asset('html_front/img/blog/flickr/3.jpg') }}" alt=""></a></li>
+											<li><a href="#"><img src="{{ asset('html_front/img/blog/flickr/4.jpg') }}" alt=""></a></li>
+											<li><a href="#"><img src="{{ asset('html_front/img/blog/flickr/5.jpg') }}" alt=""></a></li>
+											<li><a href="#"><img src="{{ asset('html_front/img/blog/flickr/6.jpg') }}" alt=""></a></li>
 										</ul>
 									</div>
 								</div>
@@ -2531,8 +821,8 @@
 						</div>
 					</div>
 				</div>
-				<!-- End Footer Top Area -->	
-				<!-- Start Footer Bottom Area -->	
+				<!-- End Footer Top Area -->
+				<!-- Start Footer Bottom Area -->
 				<div class="footer-bottom-area">
 					<div class="container">
 						<div class="row">
@@ -2544,9 +834,9 @@
 						</div>
 					</div>
 				</div>
-				<!-- End Footer Bottom Area -->	
+				<!-- End Footer Bottom Area -->
 			</footer>
-			<!-- End Footer  Area -->	
+			<!-- End Footer  Area -->
 			<div class="spectar"></div>
 		</div>
 
@@ -2565,7 +855,7 @@
 								<!-- Start product images -->
 								<div class="product-images">
 									<div class="main-image images">
-										<img alt="" src="img/product/quickview.jpg">
+										<img alt="" src="{{ asset('html_front/img/product/quickview.jpg') }}">
 									</div>
 								</div>
 								<!-- end product images -->
@@ -2611,52 +901,52 @@
 		</div>
 		<!-- END QUICKVIEW PRODUCT -->
 		<!-- jquery
-		============================================ -->		
-        <script src="js/vendor/jquery-1.11.3.min.js"></script>
+		============================================ -->
+        <script src="{{ asset('html_front/js/vendor/jquery-1.11.3.min.js') }}"></script>
 		<!-- mixitup JS
-		============================================ -->		
-        <script src="js/jquery.mixitup.js"></script>		
+		============================================ -->
+        <script src="{{ asset('html_front/js/jquery.mixitup.js') }}"></script>
 		<!-- bootstrap JS
-		============================================ -->		
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/bootstrap-select.min.js"></script>
+		============================================ -->
+        <script src="{{ asset('html_front/js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('html_front/js/bootstrap-select.min.js') }}"></script>
 		<!-- wow JS
-		============================================ -->		
-        <script src="js/wow.min.js"></script>
+		============================================ -->
+        <script src="{{ asset('html_front/js/wow.min.js') }}"></script>
 		<!-- price-slider JS
-		============================================ -->		
-        <script src="js/jquery-price-slider.js"></script>		
+		============================================ -->
+        <script src="{{ asset('html_front/js/jquery-price-slider.js') }}"></script>
 		<!-- meanmenu JS
-		============================================ -->		
-        <script src="js/jquery.meanmenu.js"></script>
+		============================================ -->
+        <script src="{{ asset('html_front/js/jquery.meanmenu.js') }}"></script>
 		<!-- owl.carousel JS
-		============================================ -->		
-        <script src="js/owl.carousel.min.js"></script>
+		============================================ -->
+        <script src="{{ asset('html_front/js/owl.carousel.min.js') }}"></script>
 		<!-- counterup JS
-		============================================ -->		
-        <script src="js/jquery.counterup.min.js"></script>
+		============================================ -->
+        <script src="{{ asset('html_front/js/jquery.counterup.min.js') }}"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 		<!-- sliphover JS
-		============================================ -->		
-        <script src="js/jquery.sliphover.min.js"></script>
+		============================================ -->
+        <script src="{{ asset('html_front/js/jquery.sliphover.min.js') }}"></script>
 		<!-- Nivo slider js
-		============================================ --> 		
-		<script src="lib/js/jquery.nivo.slider.js" type="text/javascript"></script>
-		<script src="lib/home.js" type="text/javascript"></script>
+		============================================ -->
+		<script src="{{ asset('html_front/lib/js/jquery.nivo.slider.js') }}" type="text/javascript"></script>
+		<script src="{{ asset('html_front/lib/home.js') }}" type="text/javascript"></script>
 		<!-- scrollUp JS
-		============================================ -->		
-        <script src="js/jquery.scrollUp.min.js"></script>
+		============================================ -->
+        <script src="{{ asset('html_front/js/jquery.scrollUp.min.js') }}"></script>
         <!-- bxslider JS
-		============================================ -->		
-        <script src="js/jquery.bxslider.min.js"></script>
+		============================================ -->
+        <script src="{{ asset('html_front/js/jquery.bxslider.min.js') }}"></script>
 		<!-- masonry JS
-		============================================ -->		
-        <script src="js/masonry.pkgd.min.js"></script>
+		============================================ -->
+        <script src="{{ asset('html_front/js/masonry.pkgd.min.js') }}"></script>
 		<!-- plugins JS
-		============================================ -->		
-        <script src="js/plugins.js"></script>
+		============================================ -->
+        <script src="{{ asset('html_front/js/plugins.js') }}"></script>
 		<!-- main JS
-		============================================ -->		
-        <script src="js/main.js"></script>
+		============================================ -->
+        <script src="{{ asset('html_front/js/main.js') }}"></script>
     </body>
 </html>

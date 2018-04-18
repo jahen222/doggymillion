@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------------
 
-    Template Name: Estut - Education, Learning Centre & Kid School Bootstrap Template 
+    Template Name: Estut - Education, Learning Centre & Kid School Bootstrap Template
     Template URI: http://bootexperts.com/
     Description: Education Bootstrap Template
     Author: BootExperts
@@ -8,10 +8,10 @@
     Version: 1.0
 
 -----------------------------------------------------------------------------------
-    
+
     CSS INDEX
     ===================
-  
+
     1. Theme Default CSS (body, link color, section etc)
     2. Intro courses area
 	3. Online Shop Area
@@ -61,7 +61,7 @@
 	23. Coming Soon Template
 	24. Contact us
 	25. Shop Details
-	
+
 	*************************
     @import CSS
     *************************
@@ -73,11 +73,11 @@
     --> testimonial.css
     --> quickview.css
     --> shortcode.css
-	
-	
+
+
 -----------------------------------------------------------------------------------*/
 
-/*--------------------------------------  
+/*--------------------------------------
   1.  Theme default CSS
 ----------------------------------------*/
 
@@ -129,7 +129,7 @@ p {
     margin: 0 0 15px;
     font-family: 'Roboto', sans-serif;
     /*font-family: 'Lato', sans-serif;*/
-    
+
     color: #424242;
     font-size: 14px;
 }
@@ -250,7 +250,7 @@ body {} .padding100 {
     margin-bottom: 30px;
     color: #039BE5;
 }
-/*--------------------------------------  
+/*--------------------------------------
   2. Intro courses area
 ----------------------------------------*/
 .intro-courses-area {
@@ -504,7 +504,7 @@ body {} .padding100 {
 .brand-list .single-brand {
     width: 100%;
 }
-/*--------------------------------------  
+/*--------------------------------------
   3. Online Shop Area
 ----------------------------------------*/
 .single-product {
@@ -636,7 +636,7 @@ body {} .padding100 {
     transform: scale(1);
 }
 
-/*--------------------------------------  
+/*--------------------------------------
 	4. Online shop filter menu
 ----------------------------------------*/
 .online-shopping-area.padding100 {
@@ -693,7 +693,7 @@ body {} .padding100 {
     float: none;
     margin: 0;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	4. Search 2 area
 ----------------------------------------*/
 .search-rside {
@@ -730,7 +730,7 @@ body {} .padding100 {
     -moz-appearance: none;
     background: rgba(0, 0, 0, 0) url("img/others/appearance-bg.png") no-repeat scroll right center;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	6. Latest Blog Area
 ----------------------------------------*/
 .latest-blog-area.padding100 {
@@ -908,7 +908,7 @@ body {} .padding100 {
 .counter-list .s-counter:nth-child(4) .counter-box .counter {
     color: #8e24aa;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	7. Call To Action Area
 ----------------------------------------*/
 .call-to-action.bg-1 {
@@ -928,10 +928,10 @@ body {} .padding100 {
 .call-to-action .estut-btn {
     box-shadow: 0 3px 6px 0 #325d50;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	8. Home V2
 ----------------------------------------*/
-/*--------------------------------------  
+/*--------------------------------------
 	8.1 Search area
 ----------------------------------------*/
 .search-area.v2 {
@@ -984,7 +984,7 @@ body {} .padding100 {
     background: rgba(0, 0, 0, 0) url("img/others/appearance-bg.png") no-repeat scroll right center;
 }
 .search-form-3 select {} .search-form-3 input[type=text] {}
-/*--------------------------------------  
+/*--------------------------------------
 	8.2 Service Area
 ----------------------------------------*/
 .single-service {
@@ -1074,7 +1074,7 @@ body {} .padding100 {
 .service-list .col-md-4:nth-child(odd) .single-service:hover .service-box-back {
     transform: rotateY(0deg);
 }
-/*--------------------------------------  
+/*--------------------------------------
 	8.3 Team Area
 ----------------------------------------*/
 .team-area.v1.padding100 {
@@ -1131,7 +1131,7 @@ body {} .padding100 {
     line-height: 11px;
     margin: 15px 0 0;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	8.4 Populer courses Area
 ----------------------------------------*/
 .populer-courses-area-v2.padding100,
@@ -1213,7 +1213,7 @@ body {} .padding100 {
 .populer-courses-area-v2 .single-course:nth-child(-n+1) {
     margin-bottom: 0px;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	8.5 Photo Gallery
 ----------------------------------------*/
 .single-photo {
@@ -1236,7 +1236,7 @@ body {} .padding100 {
 .single-photo img {
     width: 100%;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	8.6 Blog Style 2
 ----------------------------------------*/
 .latest-blog-area-v2.bg-2 {
@@ -1273,7 +1273,7 @@ body {} .padding100 {
     box-shadow: 0 0 5px 0 #9a9a9a;
     margin-bottom: 5px;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	9. Home V3
 ----------------------------------------*/
 .header-v3 .header-bottom {
@@ -1301,7 +1301,7 @@ body {} .padding100 {
     margin-top: 3px;
     width: 100px;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	9.1 Service area
 ----------------------------------------*/
 .service-v3-area .single-service {
@@ -1365,7 +1365,7 @@ body {} .padding100 {
 .service-v3-area .single-service:hover .service-info {
     transform: translateY(-30px);
 }
-/*--------------------------------------  
+/*--------------------------------------
 	9.2 Welcome Tab Area
 ----------------------------------------*/
 .estut-tab li {
@@ -1422,7 +1422,7 @@ body {} .padding100 {
 .estut-tab-img {
     padding-right: 30px;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	9.3 Full Width Video Area
 ----------------------------------------*/
 .ready-to-love-video-area {} .ready-to-live-wrap h2 {
@@ -1483,7 +1483,7 @@ body {} .padding100 {
     height: 60px;
     width: 60px;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	9.4 Populer Courcses
 ----------------------------------------*/
 .populer-courses-container.style-3 .big-post .course-thumb {
@@ -1533,7 +1533,7 @@ body {} .padding100 {
 .populer-courses-container.style-3 .single-course {
     margin-bottom: 0px;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	9.5 Search and Brand logo area
 ----------------------------------------*/
 .brand-logo-area.bg-3 {
@@ -1622,7 +1622,7 @@ body {} .padding100 {
     transition: all 0.3s ease 0s;
     width: 15px;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	9.6 Our Team Area
 ----------------------------------------*/
 .our-team-area-v3 .single-member {
@@ -1798,7 +1798,7 @@ body {} .padding100 {
     top: 15px;
     width: 110px;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	9.7 atest Blog Area v3
 ----------------------------------------*/
 .latest-blog-area-v3 .single-blog.big-post {
@@ -1846,7 +1846,7 @@ body {} .padding100 {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
 }
-/*--------------------------------------  
+/*--------------------------------------
 	9.8 Brand Logo area v4
 ----------------------------------------*/
 .brand-logo-area.bg-4 {
@@ -1855,7 +1855,7 @@ body {} .padding100 {
 .brand-logo-area.bg-4 .single-brand {
     border-right: 1px solid #edd47d;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	9.9 Blog Area
 ----------------------------------------*/
 .latest-blog-area-v3 .single-blog-post .blog-thumb {
@@ -1882,7 +1882,7 @@ body {} .padding100 {
     line-height: 23px;
     margin: 0;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	10. About Page
 ----------------------------------------*/
 .page-header-v1.bg-1 {
@@ -1948,7 +1948,7 @@ body {} .padding100 {
 .breadcrumbs {
     padding-bottom: 30px;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	10.1 Feature Area
 ----------------------------------------*/
 .features-accordion .panel-title a {
@@ -2008,7 +2008,7 @@ body {} .padding100 {
 .features-accordion .panel-group:last-child {
     margin-bottom: 0px;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	10.2 Skill area
 ----------------------------------------*/
 .skill-content {
@@ -2060,7 +2060,7 @@ body {} .padding100 {
 .skill-wrap .skill:last-child {
     margin-bottom: 0;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	10.3 Brand Logo
 ----------------------------------------*/
 .brand-logo-area.solid-bg-4 {
@@ -2069,7 +2069,7 @@ body {} .padding100 {
 .brand-logo-area.solid-bg-4 .single-brand {
     border-right: 1px solid #fadd82;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	11. Courses Details
 ----------------------------------------*/
 .left-side-wrap {
@@ -2171,7 +2171,7 @@ body {} .padding100 {
 .widget:last-child {
     margin-bottom: 0;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	11.1 Related-course-container
 ----------------------------------------*/
 .related-course-area.padding100 {
@@ -2183,13 +2183,13 @@ body {} .padding100 {
 .related-course-container .single-course {
     margin-bottom: 5px;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	12. Service page
 ----------------------------------------*/
 .intro-courses-area.no-margin {
     margin: 0;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	13. Team Page
 ----------------------------------------*/
 .our-team-area-v4 .single-member {
@@ -2222,7 +2222,7 @@ body {} .padding100 {
     line-height: 42px;
     padding: 0 30px;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	14. Pricing Table
 ----------------------------------------*/
 .single-price-table {
@@ -2284,7 +2284,7 @@ body {} .padding100 {
     margin-bottom: 60px;
     margin-top: 30px;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	15. Blog Small Image
 ----------------------------------------*/
 .blog-small-image .blog-thumb {
@@ -2341,7 +2341,7 @@ body {} .padding100 {
 .pagination-area-v1 {
     margin-top: 50px;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	16. Large Image
 ----------------------------------------*/
 .widget-wrap {
@@ -2555,7 +2555,7 @@ body {} .padding100 {
 .widget-wrap {
     position: relative;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	17. Blog Detailes
 ----------------------------------------*/
 .footer-social-bookmark.blog-solial-icon ul li {
@@ -2618,7 +2618,7 @@ body {} .padding100 {
 .blog-details .single-blog {
     border-radius: 4px;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	18.1 Related Post
 ----------------------------------------*/
 .related-post-v2 .single-post {
@@ -2656,7 +2656,7 @@ body {} .padding100 {
 .related-post-v2 .blog-content {
     margin: 0;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	18.1 Review Area
 ----------------------------------------*/
 .reviewer-img {
@@ -2715,7 +2715,7 @@ body {} .padding100 {
     color: #212121;
 }
 .reviewer-name a:hover {}
-/*--------------------------------------  
+/*--------------------------------------
 	18.3 Comment Form
 ----------------------------------------*/
 .form-inner .single-input label {
@@ -2754,7 +2754,7 @@ textarea {
     margin: 0 auto;
     transition: all 0.3s ease 0s;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	19. Shop  FullWidth
 ----------------------------------------*/
 .product-filter-inner,
@@ -2874,7 +2874,7 @@ label.filter-price-title {
     margin-left: 0;
 }
 .filter-menu-list li.active::before {}
-/*--------------------------------------  
+/*--------------------------------------
 	19.1 Sort By Toolbar
 ----------------------------------------*/
 .toolbar-sortby {
@@ -2959,7 +2959,7 @@ label.filter-price-title {
 .shop-content-area .col-md-3:nth-last-child(-n+4) .single-product {
     margin-bottom: 0;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	20. Shop Grid View
 ----------------------------------------*/
 #categorymenu ul ul {
@@ -3046,7 +3046,7 @@ label.filter-price-title {
     margin: 20px auto;
     text-transform: uppercase;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	20.1 Color Filter
 ----------------------------------------*/
 .color-list .color {
@@ -3128,7 +3128,7 @@ label.filter-price-title {
     margin-bottom: 0;
     padding-bottom: 0;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	20.2 Top Rated Product
 ----------------------------------------*/
 .trpm-img {
@@ -3155,7 +3155,7 @@ label.filter-price-title {
     padding-bottom: 0;
     border-bottom: 0px solid #ebebeb;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	21. Shop List View
 ----------------------------------------*/
 .product-list-view-area .pro-thumb {
@@ -3207,7 +3207,7 @@ label.filter-price-title {
     width: 65.3%;
     padding: 30px 50px;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	22. 404 page
 ----------------------------------------*/
 .error-wrap-area {
@@ -3276,7 +3276,7 @@ label.filter-price-title {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
     padding: 10px 25px;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	23. Coming Soon Template
 ----------------------------------------*/
 .coming-wrap-area {
@@ -3362,7 +3362,7 @@ label.filter-price-title {
     top: 0;
     border-radius: 100%;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	24. Contact us
 ----------------------------------------*/
 .info-icon {
@@ -3439,7 +3439,7 @@ label.filter-price-title {
 .info-dis a {
     color: #424242;
 }
-/*--------------------------------------  
+/*--------------------------------------
 	25. Shop Details
 ----------------------------------------*/
 .details-product-inner {
