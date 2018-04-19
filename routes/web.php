@@ -13,4 +13,7 @@
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('inicio');
+
+Route::get('register', ['as'=> 'dog.register', 'uses' => 'DogsController@Register']);
+Route::post('register', ['as'=> 'dog.store', 'uses' => 'DogsController@Store']);
