@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\DB;
+use App\Dog;
+use Faker\Factory;
 
 class RaceSeeder extends DatabaseSeeder
 {
@@ -104,5 +106,21 @@ class RaceSeeder extends DatabaseSeeder
           (90, 'Xoloitzcuintle'),
           (91, 'Yorkshire Terrier');";
       DB::unprepared($statement);
+
+      $faker = Factory::create();
+      for($i=0; $i<2000; $i++){
+          $dog = Dog::create([
+            'name' => $faker->name,
+            'image' => '1524194377.jpeg',
+            'race_id' => rand(1,10),
+            'bio' => $faker->text,
+            'gender' => 'Macho',
+            'age' => rand(1,10),
+            'dead' => false,
+            'country_id' => rand(1,10),
+            'owner_name' => $faker->name,
+            'owner_email' => $faker->email
+          ]);
+        }
     }
 }

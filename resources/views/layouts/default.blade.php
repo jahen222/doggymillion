@@ -102,62 +102,28 @@
               <div class="container">
                 <div class="row hidden-xs hidden-sm">
                   <!-- Start Main Menu -->
-                                  <div class="col-md-12 text-center">
-                                      <div class="menu-wrap">
-                                          <nav class="primary-menu">
-                                              <ul>
-                                                  <li class="current"><a href="index.html">Home <span class="indicator"><i class="fa fa-angle-down"></i></span></a>
-                                                      <ul class="estut-dropdown">
-                                                          <li><a href="index.html">Home One</a></li>
-                                                          <li><a href="index-2.html">Home Two</a></li>
-                                                          <li><a href="index-3.html">Home Three</a></li>
-                                                      </ul>
-                                                  </li>
-                                                  <li><a href="about-us.html">ABOUT </a></li>
-                                                  <li><a href="#">SHOP <span class="indicator"><i class="fa fa-angle-down"></i></span></a>
-                                                      <ul class="estut-dropdown">
-                                                          <li><a href="shop-fullwidth.html">Shop Fullwidth</a></li>
-                                      <li><a href="shop-fullwidth-2.html">Shop Fullwidth Style-2</a></li>
-                                      <li><a href="shop-grid-view.html">Shop Grid View</a></li>
-                                      <li><a href="shop-grid-view-2.html">Shop Grid View Style-2</a></li>
-                                      <li><a href="shop-list-view.html">Shop List View</a></li>
-                                      <li><a href="shop-list-view-2.html">Shop List View Style-2</a></li>
-                                                      </ul>
-                                                  </li>
-                                                  <li><a href="#">PAGES <span class="indicator"><i class="fa fa-angle-down"></i></span></a>
-                                                      <ul class="estut-dropdown">
-                                                          <li><a href="about-us.html">About Us</a></li>
-                                      <li><a href="coming-soon.html">Coming soon</a></li>
-                                      <li><a href="contact-us.html">Contact Us</a></li>
-                                      <li><a href="faq.html">FAQ</a></li>
-                                      <li><a href="pricing-tables.html">Pricing Tables</a></li>
-                                      <li><a href="service.html">Our Services</a></li>
-                                      <li><a href="404.html">404 Page</a></li>
-                                                      </ul>
-                                                  </li>
-                                                  <li class="menu-logo-2">
-                                              <div class="header-logo-2">
-                              <a href="{{ route('inicio') }}"><img src="{{ asset('assets/256_pixels/1_Primary_logo_on_transparent_256_v2.png') }}" alt="main logo" /></a>
-                            </div>
-                                                  </li>
-                                                  <li><a href="#">Bloag <span class="indicator"><i class="fa fa-angle-down"></i></span></a>
-                                                      <ul class="estut-dropdown">
-                                                          <li><a href="blog-grid.html">Blog Grid Style</a></li>
-                                      <li><a href="blog-large-image.html">Blog large Image</a></li>
-                                      <li><a href="blog-small-image.html">Blog Small Image</a></li>
-                                      <li><a href="blog-regular-grid.html">Blog Regular Grid Style</a></li>
-                                      <li><a href="blog-masonry-grid.html">Blog Masonry Grid Style</a></li>
-                                      <li><a href="blog-details.html">Blog Details</a></li>
-                                                      </ul>
-                                                  </li>
-                                                  <li><a href="team.html">Our Team</a></li>
-                              <li><a href="course-details.html">COURSES</a></li>
-                              <li><a href="contact-us.html">CONTACT</a></li>
-                                              </ul>
-                                          </nav>
+                    <div class="col-md-12 text-center">
+                        <div class="menu-wrap">
+                            <nav class="primary-menu">
+                                <ul>
+                                    <li class="current"><a href="{{ route('inicio') }}">Inicio </a></li>
+                                    <li><a href="#">Nosotros </a></li>
+                                    <li><a href="{{ route('paises') }}">Países </a></li>
+                                    <li><a href="#">Contacto </a></li>
+                                    <li class="menu-logo-2">
+                                      <div class="header-logo-2">
+                                        <a href="{{ route('inicio') }}"><img src="{{ asset('assets/256_pixels/1_Primary_logo_on_transparent_256_v2.png') }}" alt="main logo" /></a>
                                       </div>
-                                  </div>
-                                  <!-- End Main Menu -->
+                                    </li>
+                                    <li><a href="#">Otras</a></li>
+                                    <li><a href="#">Otras</a></li>
+                                    <li><a href="#">Otras</a></li>
+                                    <li><a href="#">Otras</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                  <!-- End Main Menu -->
                 </div>
                   <div class="col-sm-3 hidden-md hidden-lg">
                     <div class="mobile-logo">
@@ -169,48 +135,14 @@
                     <div class='mobile-menu-area'>
                       <nav id="mobile-menu">
                         <ul>
-                          <li><a href="index.html">Home</a>
-                            <ul>
-                              <li><a href="index.html">Home Shop 1</a></li>
-                              <li><a href="index-2.html">Home Shop 2</a></li>
-                              <li><a href="index-3.html">Home Shop 3</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="about-us.html">ABOUT </a></li>
-                              <li><a href="team.html">Our Team</a></li>
-                          <li><a href="shop-fullwidth.html">Shop Pages</a>
-                            <ul>
-                              <li><a href="shop-fullwidth.html">Shop Fullwidth</a></li>
-                                      <li><a href="shop-fullwidth-2.html">Shop Fullwidth Style-2</a></li>
-                                      <li><a href="shop-grid-view.html">Shop Grid View</a></li>
-                                      <li><a href="shop-grid-view-2.html">Shop Grid View Style-2</a></li>
-                                      <li><a href="shop-list-view.html">Shop List View</a></li>
-                                      <li><a href="shop-list-view-2.html">Shop List View Style-2</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="blog-grid.html">Blog Pages</a>
-                            <ul>
-                              <li><a href="blog-grid.html">Blog Grid Style</a></li>
-                                      <li><a href="blog-large-image.html">Blog large Image</a></li>
-                                      <li><a href="blog-small-image.html">Blog Small Image</a></li>
-                                      <li><a href="blog-regular-grid.html">Blog Regular Grid Style</a></li>
-                                      <li><a href="blog-masonry-grid.html">Blog Masonry Grid Style</a></li>
-                                      <li><a href="blog-details.html">Blog Details</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="#">Pages</a>
-                            <ul>
-                              <li><a href="coming-soon.html">Coming soon</a></li>
-                                      <li><a href="about-us.html">About Us</a></li>
-                                      <li><a href="contact-us.html">Contact Us</a></li>
-                                      <li><a href="faq.html">FAQ</a></li>
-                                      <li><a href="pricing-tables.html">Pricing Tables</a></li>
-                                      <li><a href="service.html">Our Services</a></li>
-                                      <li><a href="404.html">404 Page</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="course-details.html">COURSES</a></li>
-                              <li><a href="contact-us.html">CONTACT</a></li>
+                          <li><a href="{{ route('inicio') }}">Inicio</a></li>
+                          <li><a href="#">Nosotros </a></li>
+                          <li><a href="#">Países</a></li>
+                          <li><a href="#">Contacto</a></li>
+                          <li><a href="#">Otras</a></li>
+                          <li><a href="#">Otras</a></li>
+                          <li><a href="#">Otras</a></li>
+                          <li><a href="#">Otras</a></li>
                         </ul>
                       </nav>
                     </div>
@@ -227,6 +159,38 @@
         <!-- Content -->
         @yield('content')
 
+        <!-- Start Brands logo Area -->
+        <div class="row padding-t50 bg-white-2">
+          <div class="brand-logo-area solid-bg-2">
+            <div class="brand-list">
+              <div class="single-brand">
+                <a href="#"></a><img src="{{ asset('html_front/img/brand/1.png') }}" alt="Brand Image" />
+              </div>
+              <div class="single-brand">
+                <img src="{{ asset('html_front/img/brand/2.png') }}" alt="Brand Image" />
+              </div>
+              <div class="single-brand">
+                <img src="{{ asset('html_front/img/brand/3.png') }}" alt="Brand Image" />
+              </div>
+              <div class="single-brand">
+                <img src="{{ asset('html_front/img/brand/4.png') }}" alt="Brand Image" />
+              </div>
+              <div class="single-brand">
+                <img src="{{ asset('html_front/img/brand/5.png') }}" alt="Brand Image" />
+              </div>
+              <div class="single-brand">
+                <img src="{{ asset('html_front/img/brand/6.png') }}" alt="Brand Image" />
+              </div>
+              <div class="single-brand">
+                <img src="{{ asset('html_front/img/brand/3.png') }}" alt="Brand Image" />
+              </div>
+              <div class="single-brand">
+                <img src="{{ asset('html_front/img/brand/5.png') }}" alt="Brand Image" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Brands logo Area -->
         <!-- Start  Footer  Area -->
         <footer id="footer-area">
           <!-- Start Footer Top Area -->

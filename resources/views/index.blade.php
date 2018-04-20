@@ -8,6 +8,7 @@ Inicio
 
 {{-- content --}}
 @section('content')
+	@include('flash::message')
 	<!-- Start Slider Area -->
 	<section class="slider-area slide-v2">
 		<div class="bend niceties preview-2">
@@ -35,7 +36,7 @@ Inicio
 								</div>
 								<!-- layer 4 -->
 								<div class="layer-1-4">
-									<a href="{{ route('dog.register') }}" class="estut-btn active hidden-sm hidden-xs">Registra tu Mascota</a>
+									<a href="{{ route('dog.register') }}" class="estut-btn active hidden-sm hidden-xs">Registra tu Perro</a>
 								</div>
 							</div>
 						</div>
@@ -62,7 +63,7 @@ Inicio
 								</div>
 								<!-- layer 4 -->
 								<div class="layer-2-4">
-									<a href="{{ route('dog.register') }}" class="estut-btn active hidden-sm hidden-xs">Registra tu Mascota</a>
+									<a href="{{ route('dog.register') }}" class="estut-btn active hidden-sm hidden-xs">Registra tu Perro</a>
 								</div>
 							</div>
 						</div>
@@ -78,16 +79,16 @@ Inicio
 			<div class="row">
 				<div class="col-md-12">
 					<div class="search-inner fix">
-						<div class="search-title"><h4>Search Courses</h4></div>
+						<div class="search-title"><h4>Buscar</h4></div>
 						<div class="search-form-3">
-							<form action="#">
+							<form action="{{ route('search') }}">
 								<select>
-									<option value="What do you want to learn today?">What do you want to learn today?</option>
-									<option value="Should I call or email you?">Should I call or email you?</option>
-									<option value="What is the meaning of this?">What is the meaning of this?</option>
+									<option value="Nombre">Por nombre</option>
+									<option value="Raza">Por raza</option>
+									<option value="País">Por país</option>
 								</select>
-								<input type="text" placeholder="Keyword"/>
-								<input type="submit" value="search" class="estut-btn-v2"/>
+								<input name="search" type="text" placeholder="Texto"/>
+								<input type="submit" value="Buscar" class="estut-btn-v2"/>
 							</form>
 						</div>
 					</div>
@@ -106,26 +107,26 @@ Inicio
 					<div class="counter-list">
 						<div class="s-counter">
 							<div class="counter-box">
-								<h2 class="counter">532</h2>
-								<h5 class="count-title">DEGREE OPTIONS</h5>
+								<h2 class="counter">1000000</h2>
+								<h5 class="count-title">QUEREMOS LLEGAR</h5>
 							</div>
 						</div>
 						<div class="s-counter">
 							<div class="counter-box">
-								<h2 class="counter">460</h2>
-								<h5 class="count-title">CLASSES COMPLETE</h5>
+								<h2 class="counter">{{count($dogs)}}</h2>
+								<h5 class="count-title">REGISTRADOS</h5>
 							</div>
 						</div>
 						<div class="s-counter">
 							<div class="counter-box">
-								<h2 class="counter">1840</h2>
-								<h5 class="count-title">PROGRAMS</h5>
+								<h2 class="counter">{{1000000-count($dogs)}}</h2>
+								<h5 class="count-title">NOS FALTAN</h5>
 							</div>
 						</div>
 						<div class="s-counter">
 							<div class="counter-box">
-								<h2 class="counter">298</h2>
-								<h5 class="count-title">happy students</h5>
+								<h2 class="counter">1</h2>
+								<h5 class="count-title">HAZ DE TU MASCOTA</h5>
 							</div>
 						</div>
 					</div>
@@ -135,36 +136,21 @@ Inicio
 		</div>
 	</section>
 	<!-- End service v2 Area -->
-	<!-- Start Brands logo Area -->
-  <div class="row padding-t50 bg-white-2">
-  	<div class="brand-logo-area solid-bg-2">
-  		<div class="brand-list">
-  			<div class="single-brand">
-  				<a href="#"></a><img src="{{ asset('html_front/img/brand/1.png') }}" alt="Brand Image" />
-  			</div>
-  			<div class="single-brand">
-  				<img src="{{ asset('html_front/img/brand/2.png') }}" alt="Brand Image" />
-  			</div>
-  			<div class="single-brand">
-  				<img src="{{ asset('html_front/img/brand/3.png') }}" alt="Brand Image" />
-  			</div>
-  			<div class="single-brand">
-  				<img src="{{ asset('html_front/img/brand/4.png') }}" alt="Brand Image" />
-  			</div>
-  			<div class="single-brand">
-  				<img src="{{ asset('html_front/img/brand/5.png') }}" alt="Brand Image" />
-  			</div>
-  			<div class="single-brand">
-  				<img src="{{ asset('html_front/img/brand/6.png') }}" alt="Brand Image" />
-  			</div>
-  			<div class="single-brand">
-  				<img src="{{ asset('html_front/img/brand/3.png') }}" alt="Brand Image" />
-  			</div>
-  			<div class="single-brand">
-  				<img src="{{ asset('html_front/img/brand/5.png') }}" alt="Brand Image" />
-  			</div>
-  		</div>
-  	</div>
-  </div>
-	<!-- End Brands logo Area -->
+
+	<div class="row padding-t50 bg-white-2">
+		<section class="bg-white-2">
+			<div class="container">
+				@foreach($dogs as $dog)
+					<div class="col-md-2">
+						<div class="card" style="width: 18rem;">
+							{{ Html::image(route('dogimage', ['image' => $dog->image]), 'a picture', array('width' => '180', 'height' => '180')) }}
+						  <div class="card-body">
+						    <p class="card-text"><a href="{{ route('show', ['id' => $dog->id]) }}">{{ $dog->name }}</a></p>
+						  </div>
+						</div>
+					</div>
+				@endforeach
+			</div>
+		</section>
+	</div>
 @stop

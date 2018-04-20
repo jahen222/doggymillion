@@ -1886,10 +1886,10 @@ body {} .padding100 {
 	10. About Page
 ----------------------------------------*/
 .page-header-v1.bg-1 {
-    background: rgba(0, 0, 0, 0) url("img/section-bg/page-deader-1.jpg") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("../assets/Imagenes/slide5.jpg") no-repeat scroll center center / cover;
 }
 .page-header-v1.bg-2 {
-    background: rgba(0, 0, 0, 0) url("img/section-bg/page-deader-2.jpg") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("../assets/Imagenes/slide3.jpg") no-repeat scroll center center / cover;
 }
 .page-header-v1.bg-3 {
     background: rgba(0, 0, 0, 0) url("img/section-bg/page-deader-3.jpg") no-repeat scroll center center / cover;

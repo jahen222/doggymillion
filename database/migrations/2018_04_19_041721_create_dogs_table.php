@@ -17,12 +17,14 @@ class CreateDogsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('image');
-            $table->text('race')->nullable();
+            $table->integer('race_id')->nullable()->unsigned()->index();
+            $table->foreign('race_id')->references('id')->on('races')->onDelete('cascade');
             $table->text('bio')->nullable();
-      			$table->string('gender')->nullable(); 
+      			$table->string('gender')->nullable();
       			$table->integer('age')->nullable()->unsigned();
             $table->boolean('dead')->default(0);
-      			$table->string('country');
+      			$table->integer('country_id')->unsigned()->index();
+            $table->foreign('country_id')->references('id')->on('countries')->onDelete('cascade');
             $table->string('owner_name')->nullable();
             $table->string('owner_email')->nullable();
             $table->timestamps();

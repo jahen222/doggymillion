@@ -39,17 +39,6 @@ class Dog extends Model
         'owner_email' => 'string'
     ];
 
-    /**
-     * Validation rules
-     *
-     * @var array
-     */
-    public static $rules = [
-        'name' => 'required',
-        'image' => 'required',
-        'country' => 'required',
-    ];
-
     public function country()
     {
         return $this->belongsTo('App\Country');

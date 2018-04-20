@@ -9,13 +9,13 @@ Registro
 {{-- content --}}
 @section('content')
   <link href="{{ asset('assets/css/register.css') }}" rel="stylesheet">
-
+  @include('flash::message')
   <section id="contact">
   	<div class="section-content">
   		<h1 class="section-header">Registra <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Tu Mascota</span></h1>
   		<h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
   	</div>
-  	{!! Form::open(array('route' => 'dog.store', 'files' => true, 'method' => 'post')) !!}
+  	{!! Form::open(array('route' => 'payment', 'files' => true, 'method' => 'post')) !!} 
         {{ csrf_field() }}
     <div class="contact-section">
     	<div class="container">
@@ -29,10 +29,6 @@ Registro
               {!! Form::text('name', null, ['class' => 'form-control',  'placeholder' => 'Nombre mascota']) !!}
   		  		</div>
             <div class="form-group">
-  	  				<label>Imagen </label>
-              {!! Form::file('image', null) !!}
-  		  		</div>
-            <div class="form-group">
   			    	<label>Genero </label>
               {{ Form::select('gender', ['Macho', 'Hembra'], null, ['class' => 'form-control', 'placeholder' => 'Genero mascota']) }}
   			  	</div>
@@ -41,8 +37,12 @@ Registro
               {!! Form::number('age', null, ['class' => 'form-control', 'placeholder' => 'Edad mascota']) !!}
   	  			</div>
             <div class="form-group">
+  	  				<label>Imagen </label>
+              {!! Form::file('image', null) !!}
+  		  		</div>
+            <div class="form-group">
                 <label>A muerto? </label>
-                <input name="dead" type="checkbox" value=0>
+                Si {{ Form::radio('dead', 1) }} No {{ Form::radio('dead', 0, true) }}
             </div>
   	  		</div>
   	  		<div class="col-md-6">
