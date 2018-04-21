@@ -38,7 +38,7 @@ class PaypalController extends Controller
     {
         $validated = Validator::make($data->all(), [
             'name' => 'required',
-            'image' => 'required',
+            'image' => 'required|mimes:jpeg,png,jpg,gif,svg',
             'race_id' => 'required',
             'bio' => 'required',
             'gender' => 'required',
@@ -57,7 +57,7 @@ class PaypalController extends Controller
 
         $imageName = time().'.'.$data->file('image')->getClientOriginalExtension();
         $data->file('image')->move(base_path().'/public/assets/perros/', $imageName);
-        
+
         \Session::put('name', $data->name);
         \Session::put('image', $imageName);
         \Session::put('race_id', $data->race_id);

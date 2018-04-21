@@ -82,7 +82,7 @@ class DogsController extends Controller
     {
         $validated = Validator::make($request->all(), [
             'name' => 'required',
-            'image' => 'required',
+            'image' => 'required|mimes:jpeg,png,jpg,gif,svg',
             'race_id' => 'required',
             'bio' => 'required',
             'gender' => 'required',

@@ -8,6 +8,13 @@ Show
 
 {{-- content --}}
 @section('content')
+  <div itemprop="reviews" itemscope itemtype="http://www.doggymillon.com/show">
+    <meta itemprop="og:title" property="og:title" content="{{ $dog->name }}" />
+    <meta itemprop="og:type" property="og:type" content="article" />
+    <meta itemprop="og:image" property="og:image" content="{{ Html::image(route('dogimage', ['image' => $dog->image]), 'a picture', array('width' => '820', 'height' => '572')) }}" />
+    <meta itemprop="og:description" property="og:description" content="{{ $dog->bio }}" />
+  </div>
+
   <section class="course-details-area padding100 bg-gray">
     <div class="container">
       <div class="row">
