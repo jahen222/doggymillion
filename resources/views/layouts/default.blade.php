@@ -82,6 +82,9 @@
                   <div class="col-md-5">
                     <div class="header-top-right pull-right">
                       <ul>
+                        <li>
+                          <div id="google_translate_element"></div>
+                        </li>
                         <li class="search-bar">
                           <div class="search-form">
                             <form action="{{ route('search') }}">
@@ -405,5 +408,12 @@
       <!-- main JS
       ============================================ -->
           <script src="{{ asset('html_front/js/main.js') }}"></script>
+
+          <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+            }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
       </body>
   </html>
