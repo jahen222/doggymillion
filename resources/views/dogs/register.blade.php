@@ -10,7 +10,7 @@ Registro
 @section('content')
   <!--<link href="{{ asset('assets/css/register.css') }}" rel="stylesheet">-->
   @include('flash::message')
-  <div class="row padding-t50 bg-white-2">
+  <div class="row padding-t50">
   <section id="contact">
   	<div class="section-content" align="center">
   		<h1 class="section-header">Registra <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Tu Mascota</span></h1>

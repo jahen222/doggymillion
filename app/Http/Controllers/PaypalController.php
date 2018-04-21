@@ -34,10 +34,9 @@ class PaypalController extends Controller
       $this->apiContext->setConfig($paypal_conf['settings']);
     }
 
-    public function postPayment(Request $request)
+    public function postPayment(Request $data)
     {
-        \Session::put('request', $request);
-        $validated = Validator::make($request->all(), [
+        $validated = Validator::make($data->all(), [
             'name' => 'required',
             'image' => 'required',
             'race_id' => 'required',
@@ -135,6 +134,22 @@ class PaypalController extends Controller
 
         if(isset($redirect_url)) {
           // redirect to paypal
+          $imageName = time().'.'.$data->file('image')->getClientOriginalExtension();
+          $data->file('image')->move(base_path().'/public/assets/perros/', $imageName);
+
+          $dog = new Dog;
+          $dog->name = $data->name;
+          $dog->image = $imageName;
+          $dog->race_id = $data->race_id;
+          $dog->bio = $data->bio;
+          $dog->gender = $data->gender;
+          $dog->age = $data->age;
+          $dog->dead = $data->dead;
+          $dog->country_id = $data->country_id;
+          $dog->owner_name = $data->owner_name;
+          $dog->owner_email = $data->owner_email;
+          $dog->save();
+
           return \Redirect::away($redirect_url);
         }
     }
@@ -149,11 +164,10 @@ class PaypalController extends Controller
 
       $payerId = \Input::get('PayerID');
       $token = \Input::get('token');
-      $request = \Session::get('request');
 
       if (empty($payerId) || empty($token)) {
         Flash::error('Hubo un problema al intentar pagar con Paypal');
-        \Session::forget('request');
+
         return \Redirect::route('inicio');
       }
 
@@ -167,29 +181,10 @@ class PaypalController extends Controller
 
       if ($result->getState() == 'approved') {
         //\Session::forget('cart');
-        $imageName = time().'.'.$request->file('image')->getClientOriginalExtension();
-        $request->file('image')->move(base_path().'/public/assets/perros/', $imageName);
-
-        $dog = new Dog;
-        $dog->name = $request->name;
-        $dog->image = $imageName;
-        $dog->race_id = $request->race_id;
-        $dog->bio = $request->bio;
-        $dog->gender = $request->gender;
-        $dog->age = $request->age;
-        $dog->dead = $request->dead;
-        $dog->country_id = $request->country_id;
-        $dog->owner_name = $request->owner_name;
-        $dog->owner_email = $request->owner_email;
-        $dog->save();
-
-        \Session::forget('request');
         Flash::success('Compra realizada de forma correcta y su perro registrado con éxito');
-
         return redirect(route('inicio'));
       }
       Flash::error('La compra fue cancelada.');
-      \Session::forget('request');
       return \Redirect::route('inicio');
     }
 }
