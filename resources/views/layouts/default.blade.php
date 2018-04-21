@@ -130,7 +130,7 @@
                 </div>
                   <div class="col-sm-3 hidden-md hidden-lg">
                     <div class="mobile-logo">
-                      <a href="{{ route('inicio') }}"><img src="{{ asset('assets/256_pixels/1_Primary_logo_on_transparent_256_v2.png') }}" alt="main logo" /></a>
+                      <a href="{{ route('inicio') }}"><img src="{{ asset('assets/256_pixels/mobile.png') }}" alt="main logo" /></a>
                     </div>
                   </div>
                   <div class="col-sm-9 hidden-md hidden-lg">
@@ -213,9 +213,9 @@
                   <div class="footer-top-menu">
                     <h3 class="widget-title">Objetivo</h3>
                     <div class="fo-aboutus-container">
-                      <p>Esta es una campana para mejorar el estilo de vida de miles de perros en condición de calle.</p>
+                      <p>Buscamos a través de nuestra web fomentar la buena convivencia y Unión de propietarios y mascotas además de crear una base de datos perpetua de 1 millón de fotos de nuestros perritos en la red Internet! Por sólo 1$ Por cada foto.</p>
                       <address>
-                        <p><strong>Ubicación :</strong> Calle 2 Sur, 28042 Madrid, España.</p>
+                        <p><strong>Ubicación :</strong> 650-698 9th St, Sacramento, CA 95814, EEUU.</p>
                         <p><strong>Email : </strong><a href="#">doggymillon@outlook.com </a></p>
                         <p><strong>Contacto : </strong><a href="#">+59-167630096</a></p>
                       </address>
@@ -265,7 +265,7 @@
                 </div>
                 <div class="col-md-3 col-sm-4">
                   <div class="footer-top-menu">
-                    <h3 class="widget-title">Siguenos en @doggymillion</h3>
+                    <h3 class="widget-title">Siguenos en @doggymillon</h3>
                     <div class="blog-flickr">
                       <ul>
                         <li><a href="https://instagram.com/download/?r=7555864405"><img src="{{ asset('assets/Imagenes/ins1.jpg') }}" alt=""></a></li>
@@ -288,7 +288,7 @@
               <div class="row">
                 <div class="col-md-12 text-center">
                   <div class="copyright-wrap text-center">
-                    <p>&copy; 2018 Site By: <a href="">henryjaimes.peli@gmail.com</a>, All Rights Reserved</p>
+                    <p>&copy; 2018 <a href="">www.doggymillon.com</a>, All Rights Reserved</p>
                   </div>
                 </div>
               </div>

@@ -22,8 +22,7 @@ Show
             </div>
             <div class="course-content">
               <h2 class="course-title"><a href="#">{{ $dog->name }}</a></h2>
-              <div class="author">Dueño <a href="#">{{ $dog->owner_name }}</a></div>
-              <p>{{ $dog->bio }}</p>
+              <div class="author"><a href="#">Dueño</a> {{ $dog->owner_name }} <a href="#">Bio:</a> {{ $dog->bio }}</div>
             </div>
             <div class="rating">
               <ul>

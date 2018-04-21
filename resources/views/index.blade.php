@@ -28,9 +28,9 @@ Inicio
 								</div>
 								<!-- layer 2 -->
 								<div class="layer-1-2">
-									<h5 id="word" class="title2"><span>Para</span> <span>la</span> <span>historia</span></h5>
+									<h5 id="word" class="title2"><span>Convierte a tu perro en una pieza de historia perpetua en Internet por sólo 1$</span></h5>
 								</div>
-								<!-- layer 3 -->
+								<!-- layer 3
 								<div class="layer-1-3">
 									<p class="title3">Disponibles un millón de espacios para registrar a tu mascota, <br />Muéstrale al mundo ese pequeño pedazo de felicidad.</p>
 								</div>
@@ -55,9 +55,9 @@ Inicio
 								</div>
 								<!-- layer 2 -->
 								<div class="layer-2-2">
-									<h5 class="title2"><span>Para</span> <span>la</span> <span>historia</span></h5>
+									<h5 class="title2"><span>Convierte a tu perro en una pieza de historia perpetua en Internet por sólo 1$</span></h5>
 								</div>
-								<!-- layer 3 -->
+								<!-- layer 3
 								<div class="layer-2-3">
 									<p class="title3">Disponibles un millón de espacios para registrar a tu mascota, <br />Muéstrale al mundo ese pequeño pedazo de felicidad.</p>
 								</div>
@@ -79,16 +79,16 @@ Inicio
 			<div class="row">
 				<div class="col-md-12">
 					<div class="search-inner fix">
-						<div class="search-title"><h4>Buscar</h4></div>
+						<div class="search-title"><a href="{{ route('dog.register') }}" class="btn btn-success" style="background-color: #07b193; border-color:#07b193;">Registra tu Perro</a></div>
 						<div class="search-form-3">
 							<form action="{{ route('search') }}">
 								<select>
-									<option value="Nombre">Por nombre</option>
-									<option value="Raza">Por raza</option>
-									<option value="País">Por país</option>
+									<option value="Nombre">Busca por nombre</option>
+									<option value="Raza">Busca por raza</option>
+									<option value="País">Busca por país</option>
 								</select>
 								<input name="search" type="text" placeholder="Texto"/>
-								<input type="submit" value="Buscar" class="estut-btn-v2"/>
+								<input type="submit" value="Buscar" class="btn btn-default"/>
 							</form>
 						</div>
 					</div>
@@ -143,9 +143,9 @@ Inicio
 				@foreach($dogs as $dog)
 					<div class="col-md-2">
 						<div class="card" style="width: 18rem;">
-							{{ Html::image(route('dogimage', ['image' => $dog->image]), 'a picture', array('width' => '180', 'height' => '180')) }}
+							<a href="{{ route('show', ['id' => $dog->id]) }}">{{ Html::image(route('dogimage', ['image' => $dog->image]), 'a picture', array('width' => '180', 'height' => '180')) }}</a>
 						  <div class="card-body">
-						    <p class="card-text"><a href="{{ route('show', ['id' => $dog->id]) }}">{{ $dog->name }}</a></p>
+						    <p class="card-text"><a href="{{ route('show', ['id' => $dog->id]) }}" style="color: #8e24aa;">{{ $dog->name }}</a></p>
 						  </div>
 						</div>
 					</div>

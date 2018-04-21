@@ -42,7 +42,7 @@ Buscar
 						<div class="card" style="width: 18rem;">
 							{{ Html::image(route('dogimage', ['image' => $dog->image]), 'a picture', array('width' => '180', 'height' => '180')) }}
 						  <div class="card-body">
-						    <p class="card-text"><a href="{{ route('show', ['id' => $dog->id]) }}">{{ $dog->name }}</a></p>
+						    <p class="card-text"><a href="{{ route('show', ['id' => $dog->id]) }}" style="color: #8e24aa;">{{ $dog->name }}</a></p>
 						  </div>
 						</div>
 					</div>

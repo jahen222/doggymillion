@@ -38,7 +38,7 @@ Contacto
                   <div class="info-dis">
                     <h3 class="con-in-title">Ubicación</h3>
                     <address>
-                      <p>Calle 2 Sur, <br>28042 Madrid, España</p>
+                      <p>650-698 9th St, <br>Sacramento, CA 95814, EEUU.</p>
                     </address>
                   </div>
                 </div>
@@ -79,6 +79,6 @@ Contacto
   </div>
   <!-- Google Map js -->
   <script src="https://maps.googleapis.com/maps/api/js"></script>
-  <script>function initialize() {var mapOptions = {zoom: 15,scrollwheel: false,center: new google.maps.LatLng(40.4541444, -3.5820585)};var map = new google.maps.Map(document.getElementById('googleMap'),mapOptions);var marker = new google.maps.Marker({position: map.getCenter(),animation:google.maps.Animation.BOUNCE,icon: '{{ asset('html_front/img/others/marker.png') }}',map: map});}google.maps.event.addDomListener(window, 'load', initialize);</script>
+  <script>function initialize() {var mapOptions = {zoom: 15,scrollwheel: false,center: new google.maps.LatLng(38.5842215, -121.4941224)};var map = new google.maps.Map(document.getElementById('googleMap'),mapOptions);var marker = new google.maps.Marker({position: map.getCenter(),animation:google.maps.Animation.BOUNCE,icon: '{{ asset('html_front/img/others/marker.png') }}',map: map});}google.maps.event.addDomListener(window, 'load', initialize);</script>
 
 @stop
