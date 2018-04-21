@@ -22,7 +22,9 @@ Registro
     	<div class="container">
   			<div class="col-md-6 form-line">
             <div class="form-group">
-              <label>NOTA: </label><h5 style="color: red;">Todos los campos son obligatorios, si tu perro tiene menos de 1 año por favor ingresa 0 en el campo edad.</h5>
+              <label>NOTA: </label>
+              <h5 style="color: red;">*Todos los campos son obligatorios.</h5>
+              <h5 style="color: red;">*Si tu perro tiene menos de 1 año por favor ingresa 0 en el campo edad.</h5>
             </div>
             <div class="form-group">
               <label>Dueño </label>

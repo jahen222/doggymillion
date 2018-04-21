@@ -50,7 +50,8 @@ Instrcciones
             <div class="single-blog text-left bg-white">
               <div class="blog-info text-left">
                 <span class="blog-category c-green">Paso 3</span>
-                <h3 class="blog-title"><a href="#">Pública y paga 1$.</a></h3>
+                <h3 class="blog-title"><a href="#">Paga 1$ y pública.</a></h3>
+                <img src="{{ asset('assets/Imagenes/paypal.jpg') }}" alt="Brand Image" />
               </div>
             </div>
           </div>
