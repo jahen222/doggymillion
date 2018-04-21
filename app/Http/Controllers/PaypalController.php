@@ -185,7 +185,7 @@ class PaypalController extends Controller
 
         \Session::forget('request');
         Flash::success('Compra realizada de forma correcta y su perro registrado con éxito');
-        
+
         return redirect(route('inicio'));
       }
       Flash::error('La compra fue cancelada.');

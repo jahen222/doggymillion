@@ -23,7 +23,7 @@ Raza
         @foreach($dogs as $dog)
           <div class="col-md-2">
             <div class="card" style="width: 18rem;">
-              {{ Html::image(route('dogimage', ['image' => $dog->image]), 'a picture', array('width' => '180', 'height' => '180')) }}
+              <a href="{{ route('show', ['id' => $dog->id]) }}">{{ Html::image(route('dogimage', ['image' => $dog->image]), 'a picture', array('width' => '180', 'height' => '180')) }}</a>
               <div class="card-body">
                 <p class="card-text"><a href="{{ route('show', ['id' => $dog->id]) }}" style="color: #8e24aa;">{{ $dog->name }}</a></p>
               </div>

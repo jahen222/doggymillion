@@ -21,7 +21,7 @@ Razas
       <div class="container">
         <div class="list-group">
           @foreach($races as $race)
-            @if(COUNT($race->dogs)>1)
+            @if(COUNT($race->dogs)>=1)
               <a href="{{ route('raza', ['id' => $race->id]) }}" class="list-group-item">{{ $race->name }} ({{ COUNT($race->dogs) }})</a>
             @endif
           @endforeach
