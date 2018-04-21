@@ -28,7 +28,7 @@ Inicio
 								</div>
 								<!-- layer 2 -->
 								<div class="layer-1-2">
-									<h5 id="word" class="title2"><span>Convierte a tu perro en una pieza de historia perpetua en Internet por sólo 1$</span></h5>
+									<h5 id="word" class="title2"><span>Convierte a tu perro en una pieza de la historia en Internet por 1$</span></h5>
 								</div>
 								<!-- layer 3
 								<div class="layer-1-3">
@@ -55,7 +55,7 @@ Inicio
 								</div>
 								<!-- layer 2 -->
 								<div class="layer-2-2">
-									<h5 class="title2"><span>Convierte a tu perro en una pieza de historia perpetua en Internet por sólo 1$</span></h5>
+									<h5 class="title2"><span>Convierte a tu perro en una pieza de la historia en Internet por 1$</span></h5>
 								</div>
 								<!-- layer 3
 								<div class="layer-2-3">
@@ -84,8 +84,8 @@ Inicio
 							<form action="{{ route('search') }}">
 								<select>
 									<option value="Nombre">Busca por nombre</option>
-									<option value="Raza">Busca por raza</option>
-									<option value="País">Busca por país</option>
+									<!--<option value="Raza">Busca por raza</option>
+									<option value="País">Busca por país</option>-->
 								</select>
 								<input name="search" type="text" placeholder="Texto"/>
 								<input type="submit" value="Buscar" class="btn btn-default"/>

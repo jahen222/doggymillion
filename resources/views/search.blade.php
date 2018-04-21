@@ -20,8 +20,8 @@ Buscar
 							<form action="{{ route('search') }}">
 								<select>
 									<option value="Nombre">Busca por nombre</option>
-									<option value="Raza">Busca por raza</option>
-									<option value="País">Busca por país</option>
+									<!--<option value="Raza">Busca por raza</option>
+									<option value="País">Busca por país</option>-->
 								</select>
 								<input name="search" type="text" placeholder="Texto"/>
 								<input type="submit" value="Buscar" class="btn btn-default"/>

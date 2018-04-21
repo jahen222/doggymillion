@@ -167,28 +167,28 @@
           <div class="brand-logo-area solid-bg-2">
             <div class="brand-list">
               <div class="single-brand">
-                <a href="#"></a><img src="{{ asset('html_front/img/brand/1.png') }}" alt="Brand Image" />
+                <a href="#"></a><img src="{{ asset('assets/Imagenes/huella.png') }}" alt="Brand Image" />
               </div>
               <div class="single-brand">
-                <img src="{{ asset('html_front/img/brand/2.png') }}" alt="Brand Image" />
+                <img src="{{ asset('assets/Imagenes/huella.png') }}" alt="Brand Image" />
               </div>
               <div class="single-brand">
-                <img src="{{ asset('html_front/img/brand/3.png') }}" alt="Brand Image" />
+                <img src="{{ asset('assets/Imagenes/huella.png') }}" alt="Brand Image" />
               </div>
               <div class="single-brand">
-                <img src="{{ asset('html_front/img/brand/4.png') }}" alt="Brand Image" />
+                <img src="{{ asset('assets/Imagenes/huella.png') }}" alt="Brand Image" />
               </div>
               <div class="single-brand">
-                <img src="{{ asset('html_front/img/brand/5.png') }}" alt="Brand Image" />
+                <img src="{{ asset('assets/Imagenes/huella.png') }}" alt="Brand Image" />
               </div>
               <div class="single-brand">
-                <img src="{{ asset('html_front/img/brand/6.png') }}" alt="Brand Image" />
+                <img src="{{ asset('assets/Imagenes/huella.png') }}" alt="Brand Image" />
               </div>
               <div class="single-brand">
-                <img src="{{ asset('html_front/img/brand/3.png') }}" alt="Brand Image" />
+                <img src="{{ asset('assets/Imagenes/huella.png') }}" alt="Brand Image" />
               </div>
               <div class="single-brand">
-                <img src="{{ asset('html_front/img/brand/5.png') }}" alt="Brand Image" />
+                <img src="{{ asset('assets/Imagenes/huella.png') }}" alt="Brand Image" />
               </div>
             </div>
           </div>
