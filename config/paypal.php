@@ -11,12 +11,12 @@ return array(
         /**
          * Available option 'sandbox' or 'live'
          */
-        'mode' => 'sandbox',
+        'mode' => 'live',
 
         /**
          * Specify the max request time in seconds
          */
-        'http.ConnectionTimeOut' => 1000,
+        'http.ConnectionTimeOut' => 500,
 
         /**
          * Whether want to log to a file
