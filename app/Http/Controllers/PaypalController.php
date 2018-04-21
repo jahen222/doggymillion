@@ -55,6 +55,21 @@ class PaypalController extends Controller
             return redirect(route('dog.register'));
         }
 
+        $imageName = time().'.'.$data->file('image')->getClientOriginalExtension();
+        $data->file('image')->move(base_path().'/public/assets/perros/', $imageName);
+        \Session::put('paypal_payment_id', $payment->getId());
+
+        \Session::put('name', $data->name);
+        \Session::put('image', $imageName);
+        \Session::put('race_id', $data->race_id);
+        \Session::put('bio', $data->bio);
+        \Session::put('gender', $data->gender);
+        \Session::put('age', $data->age);
+        \Session::put('dead', $data->dead);
+        \Session::put('country_id', $data->country_id);
+        \Session::put('owner_name', $data->owner_name);
+        \Session::put('owner_email', $data->owner_email);
+
         $payer = new Payer();
         $payer->setPaymentMethod('paypal');
 
@@ -134,22 +149,6 @@ class PaypalController extends Controller
 
         if(isset($redirect_url)) {
           // redirect to paypal
-          $imageName = time().'.'.$data->file('image')->getClientOriginalExtension();
-          $data->file('image')->move(base_path().'/public/assets/perros/', $imageName);
-
-          $dog = new Dog;
-          $dog->name = $data->name;
-          $dog->image = $imageName;
-          $dog->race_id = $data->race_id;
-          $dog->bio = $data->bio;
-          $dog->gender = $data->gender;
-          $dog->age = $data->age;
-          $dog->dead = $data->dead;
-          $dog->country_id = $data->country_id;
-          $dog->owner_name = $data->owner_name;
-          $dog->owner_email = $data->owner_email;
-          $dog->save();
-
           return \Redirect::away($redirect_url);
         }
     }
@@ -160,10 +159,21 @@ class PaypalController extends Controller
       $payment_id = \Session::get('paypal_payment_id');
 
       // clear the session payment ID
-      //\Session::forget('paypal_payment_id');
+      \Session::forget('paypal_payment_id');
 
       $payerId = \Input::get('PayerID');
       $token = \Input::get('token');
+      
+      $name = \Session::get('name');
+      $image = \Session::get('image');
+      $race_id = \Session::get('race_id');
+      $bio = \Session::get('bio');
+      $gender = \Session::get('gender');
+      $age = \Session::get('age');
+      $dead = \Session::get('dead');
+      $country_id = \Session::get('country_id');
+      $owner_name = \Session::get('owner_name');
+      $owner_email = \Session::get('owner_email');
 
       if (empty($payerId) || empty($token)) {
         Flash::error('Hubo un problema al intentar pagar con Paypal');
@@ -181,6 +191,20 @@ class PaypalController extends Controller
 
       if ($result->getState() == 'approved') {
         //\Session::forget('cart');
+
+        $dog = new Dog;
+        $dog->name = $name;
+        $dog->image = $image;
+        $dog->race_id = $race_id;
+        $dog->bio = $bio;
+        $dog->gender = $gender;
+        $dog->age = $age;
+        $dog->dead = $dead;
+        $dog->country_id = $country_id;
+        $dog->owner_name = $owner_name;
+        $dog->owner_email = $owner_email;
+        $dog->save();
+
         Flash::success('Compra realizada de forma correcta y su perro registrado con éxito');
         return redirect(route('inicio'));
       }
