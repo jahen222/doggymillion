@@ -49,6 +49,27 @@ class DogsController extends Controller
       return view('country', compact('dogs', 'country'));
     }
 
+    public function razas()
+    {
+      $races = Race::all();
+
+      return view('races', compact('id', 'races'));
+    }
+
+    public function raza($id)
+    {
+      $race = Race::findOrFail($id);
+      $dogs = Race::findOrFail($id)->dogs;
+
+      return view('race', compact('dogs', 'race'));
+    }
+
+    public function instruction()
+    {
+
+      return view('instruction');
+    }
+
     public function Register()
     {
         $races = Race::pluck('name', 'id');
@@ -110,5 +131,17 @@ class DogsController extends Controller
         $Path = base_path().'/public/assets/perros/'.$image;
 
         return response()->file($Path);
+    }
+
+    public function about()
+    {
+
+        return view('about');
+    }
+
+    public function contact()
+    {
+
+        return view('contact');
     }
 }

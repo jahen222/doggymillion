@@ -13,9 +13,9 @@ Registro
   <section id="contact">
   	<div class="section-content">
   		<h1 class="section-header">Registra <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Tu Mascota</span></h1>
-  		<h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
+  		<h3>Ayudanos a llegar a 1000000</h3>
   	</div>
-  	{!! Form::open(array('route' => 'payment', 'files' => true, 'method' => 'post')) !!} 
+  	{!! Form::open(array('route' => 'payment', 'files' => true, 'method' => 'post')) !!}
         {{ csrf_field() }}
     <div class="contact-section">
     	<div class="container">
@@ -44,6 +44,7 @@ Registro
                 <label>A muerto? </label>
                 Si {{ Form::radio('dead', 1) }} No {{ Form::radio('dead', 0, true) }}
             </div>
+            <a href="{!! route('inicio') !!}" class="btn btn-default">Atras</a>
   	  		</div>
   	  		<div class="col-md-6">
             <div class="form-group">

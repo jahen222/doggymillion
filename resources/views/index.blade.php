@@ -24,15 +24,15 @@ Inicio
 							<div class="slider-content">
 								<!-- layer 1 -->
 								<div class="layer-1-1">
-									<h5 class="title1">The Best Education Theme</h5>
+									<h5 class="title1">Registra a tu can por tan solo 1$</h5>
 								</div>
 								<!-- layer 2 -->
 								<div class="layer-1-2">
-									<h5 id="word" class="title2"><span>feed</span> <span>your</span> <span>knowledge</span></h5>
+									<h5 id="word" class="title2"><span>Para</span> <span>la</span> <span>historia</span></h5>
 								</div>
 								<!-- layer 3 -->
 								<div class="layer-1-3">
-									<p class="title3">Cras bibendum mi nec mollis auctor. Proin posuere, erat et vestibulum commodo, <br />libero odio elementum ipsum, et rutrum eros purus at ante.</p>
+									<p class="title3">Disponibles un millón de espacios para registrar a tu mascota, <br />Muéstrale al mundo ese pequeño pedazo de felicidad.</p>
 								</div>
 								<!-- layer 4 -->
 								<div class="layer-1-4">
@@ -51,15 +51,15 @@ Inicio
 							<div class="slider-content">
 								<!-- layer 1 -->
 								<div class="layer-2-1">
-									<h5 class="title1">The Best Education Theme</h5>
+									<h5 class="title1">Registra a tu can por tan solo 1$</h5>
 								</div>
 								<!-- layer 2 -->
 								<div class="layer-2-2">
-									<h5 class="title2">online learning</h5>
+									<h5 class="title2"><span>Para</span> <span>la</span> <span>historia</span></h5>
 								</div>
 								<!-- layer 3 -->
 								<div class="layer-2-3">
-									<p class="title3">Cras bibendum mi nec mollis auctor. Proin posuere, erat et vestibulum commodo, <br />libero odio elementum ipsum, et rutrum eros purus at ante.</p>
+									<p class="title3">Disponibles un millón de espacios para registrar a tu mascota, <br />Muéstrale al mundo ese pequeño pedazo de felicidad.</p>
 								</div>
 								<!-- layer 4 -->
 								<div class="layer-2-4">
@@ -125,8 +125,8 @@ Inicio
 						</div>
 						<div class="s-counter">
 							<div class="counter-box">
-								<h2 class="counter">1</h2>
-								<h5 class="count-title">HAZ DE TU MASCOTA</h5>
+								<h2 class="counter">247</h2>
+								<h5 class="count-title">Paises disponibles</h5>
 							</div>
 						</div>
 					</div>

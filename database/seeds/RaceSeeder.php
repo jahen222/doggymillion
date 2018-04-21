@@ -104,23 +104,37 @@ class RaceSeeder extends DatabaseSeeder
           (88, 'Tosa Inu'),
           (89, 'Weimaraner'),
           (90, 'Xoloitzcuintle'),
-          (91, 'Yorkshire Terrier');";
+          (91, 'Yorkshire Terrier'),
+          (92, 'Otra');";
       DB::unprepared($statement);
 
-      $faker = Factory::create();
-      for($i=0; $i<2000; $i++){
+      //$faker = Factory::create();
+      //for($i=0; $i<2000; $i++){
           $dog = Dog::create([
-            'name' => $faker->name,
-            'image' => '1524194377.jpeg',
-            'race_id' => rand(1,10),
-            'bio' => $faker->text,
-            'gender' => 'Macho',
-            'age' => rand(1,10),
+            'name' => 'Cori',
+            'image' => '1524194371.jpeg',
+            'race_id' => 43,
+            'bio' => 'hermosa, hermosa, muy hermosa y perfecta',
+            'gender' => 'Hembra',
+            'age' => 9,
             'dead' => false,
-            'country_id' => rand(1,10),
-            'owner_name' => $faker->name,
-            'owner_email' => $faker->email
+            'country_id' => 237,
+            'owner_name' => 'Betzabeth Álvarez',
+            'owner_email' => 'betzabeth.alvarez@unet.edu.ve'
           ]);
-        }
+
+          $dog = Dog::create([
+            'name' => 'Rocky',
+            'image' => '1524194372.jpeg',
+            'race_id' => 29,
+            'bio' => 'Jugueton y molestoso, cazador de cucharachas, ya no corro como antes pero todavia le ladro a cualquiera que no sea de la familia. jejeje',
+            'gender' => 'Macho',
+            'age' => 13,
+            'dead' => false,
+            'country_id' => 237,
+            'owner_name' => 'Merly Jaimes',
+            'owner_email' => 'merlyjaimes94@gmail.com'
+          ]);
+        //}
     }
 }

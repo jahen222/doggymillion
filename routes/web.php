@@ -19,6 +19,8 @@ Route::get('show/{id}', 'DogsController@show')->name('show');
 Route::get('search', 'DogsController@search')->name('search');
 Route::get('paises', 'DogsController@paises')->name('paises');
 Route::get('pais/{id}', 'DogsController@pais')->name('pais');
+Route::get('razas', 'DogsController@razas')->name('razas');
+Route::get('raza/{id}', 'DogsController@raza')->name('raza');
 Route::post('payment', array(
 	'as' => 'payment',
 	'uses' => 'PaypalController@postPayment',
@@ -27,3 +29,6 @@ Route::get('payment/status', array(
 	'as' => 'payment.status',
 	'uses' => 'PaypalController@getPaymentStatus',
 ));
+Route::get('about', 'DogsController@about')->name('about');
+Route::get('contact', 'DogsController@contact')->name('contact');
+Route::get('instruction', 'DogsController@instruction')->name('instruction');

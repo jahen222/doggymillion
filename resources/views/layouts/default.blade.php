@@ -74,9 +74,9 @@
                 <div class="row">
                   <div class="col-md-7 hidden-xs hidden-sm">
                     <div class="header-top-left header-top-info">
-                      <p><a href="#"><i class="glyphicon glyphicon-user"></i>Contacto: </a></p>
-                      <p><a href="tel:+3211234567"><i class="fa fa-phone"></i>+59-167630096</a></p>
-                      <p><a href="mailto:admib@bootexperts.com"><i class="fa fa-envelope"></i>hucor_666@hotmail.com</a></p>
+                      <a href="{{ route('dog.register') }}" class="btn btn-success" style="background-color: #07b193; border-color:#07b193;">Registra tu Perro</a>
+                      <p><a href="#"><i class="fa fa-phone"></i>+59-167630096</a></p>
+                      <p><a href="#"><i class="fa fa-envelope"></i>doggymillon@outlook.com</a></p>
                     </div>
                   </div>
                   <div class="col-md-5">
@@ -84,9 +84,9 @@
                       <ul>
                         <li class="search-bar">
                           <div class="search-form">
-                            <form method="get" action="#">
+                            <form action="{{ route('search') }}">
                               <button type="submit"><i class="fa fa-search"></i></button>
-                              <input type="text" placeholder="Buscador" id="search" name="search">
+                              <input type="text" placeholder="Buscador" name="search">
                             </form>
                           </div>
                         </li>
@@ -106,19 +106,19 @@
                         <div class="menu-wrap">
                             <nav class="primary-menu">
                                 <ul>
-                                    <li class="current"><a href="{{ route('inicio') }}">Inicio </a></li>
-                                    <li><a href="#">Nosotros </a></li>
-                                    <li><a href="{{ route('paises') }}">Países </a></li>
-                                    <li><a href="#">Contacto </a></li>
+                                    <li class="current"><a href="{{ route('inicio') }}">Inicio</a></li>
+                                    <li><a href="{{ route('about') }}">Nosotros</a></li>
+                                    <li><a href="{{ route('paises') }}">Países</a></li>
+                                    <li><a href="{{ route('razas') }}">Razas</a></li>
                                     <li class="menu-logo-2">
                                       <div class="header-logo-2">
                                         <a href="{{ route('inicio') }}"><img src="{{ asset('assets/256_pixels/1_Primary_logo_on_transparent_256_v2.png') }}" alt="main logo" /></a>
                                       </div>
                                     </li>
-                                    <li><a href="#">Otras</a></li>
-                                    <li><a href="#">Otras</a></li>
-                                    <li><a href="#">Otras</a></li>
-                                    <li><a href="#">Otras</a></li>
+                                    <li><a href="https://www.facebook.com/Doggymillon-190986285034679/">Facebook</a></li>
+                                    <li><a href="https://instagram.com/download/?r=7555864405">Instagram</a></li>
+                                    <li><a href="{{ route('instruction') }}">Instrucciones</a></li>
+                                    <li><a href="{{ route('contact') }}">Contacto</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -136,13 +136,13 @@
                       <nav id="mobile-menu">
                         <ul>
                           <li><a href="{{ route('inicio') }}">Inicio</a></li>
-                          <li><a href="#">Nosotros </a></li>
-                          <li><a href="#">Países</a></li>
-                          <li><a href="#">Contacto</a></li>
-                          <li><a href="#">Otras</a></li>
-                          <li><a href="#">Otras</a></li>
-                          <li><a href="#">Otras</a></li>
-                          <li><a href="#">Otras</a></li>
+                          <li><a href="{{ route('about') }}">Nosotros</a></li>
+                          <li><a href="{{ route('paises') }}">Países</a></li>
+                          <li><a href="{{ route('razas') }}">Razas</a></li>
+                          <li><a href="https://www.facebook.com/Doggymillon-190986285034679/">Facebook</a></li>
+                          <li><a href="https://instagram.com/download/?r=7555864405">Instagram</a></li>
+                          <li><a href="{{ route('instruction') }}">Instrucciones</a></li>
+                          <li><a href="{{ route('contact') }}">Contacto</a></li>
                         </ul>
                       </nav>
                     </div>
@@ -202,34 +202,24 @@
                     <div class="footer-logo">
                       <a href="{{ route('inicio') }}"><img src="{{ asset('assets/256_pixels/1_Primary_logo_on_transparent_256_v2.png') }}" alt="footer Logo" /></a>
                     </div>
-                    <div class="newsletter-form">
-                      <form action="#" method="get">
-                        <input class="email-box" type="email" name="email" id="email" placeholder="Enter your email here..."/>
-                        <button type="submit"><i class="fa fa-envelope-o"></i></button>
-                      </form>
-                    </div>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-3 col-sm-4">
                   <div class="footer-top-menu">
-                    <h3 class="widget-title">ABOUT US</h3>
+                    <h3 class="widget-title">Objetivo</h3>
                     <div class="fo-aboutus-container">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sem quis lacinia faucibus.</p>
+                      <p>Esta es una campana para mejorar el estilo de vida de miles de perros en condición de calle.</p>
                       <address>
-                        <p><strong>Add :</strong> 12345 Random Str., Random State,
-                        Random City, Random Country.</p>
-                        <p><strong>Email : </strong><a href="mailto:admin@bootexperts.com ">admin@bootexperts.com </a></p>
-                        <p><strong>Phone : </strong><a href="tel:+8801973833508">(01) 123 456 - (01) 659 786</a></p>
+                        <p><strong>Ubicación :</strong> Calle 2 Sur, 28042 Madrid, España.</p>
+                        <p><strong>Email : </strong><a href="#">doggymillon@outlook.com </a></p>
+                        <p><strong>Contacto : </strong><a href="#">+59-167630096</a></p>
                       </address>
                       <div class="footer-social-bookmark">
                         <ul>
-                          <li><a target="_blank" href="#" class="facebook"><i class="fa fa-facebook-square"></i></a></li>
-                          <li><a target="_blank" href="#" class="twitter"><i class="fa fa-twitter-square"></i></a></li>
-                          <li><a target="_blank" href="#" class="google-plus"><i class="fa fa-google-plus-square"></i></a></li>
-                          <li><a target="_blank" href="#" class="dribbble"><i class="fa fa-dribbble"></i></a></li>
-                          <li><a target="_blank" href="#" class="behance"><i class="fa fa-behance-square"></i></a></li>
+                          <li><a target="_blank" title="Facebook" href="#" class="facebook social-icon"><i class="fa fa-facebook"></i></a></li>
+                          <li><a target="_blank" title="Instagram" href="#" class="instagram social-icon"><i class="fa fa-instagram"></i></a></li>
                         </ul>
                       </div>
                     </div>
@@ -237,20 +227,17 @@
                 </div>
                 <div class="col-md-3 col-sm-4">
                   <div class="footer-top-menu">
-                    <h3 class="widget-title">Latest Courses</h3>
+                    <h3 class="widget-title">Visita</h3>
                     <div class="fo-course-container">
                       <ul>
                         <li>
-                          <a href="#">Course of Creative Art</a>
-                          <p class="date">Dec 18, 2015</p>
+                          <a href="{{ route('instruction') }}">Instrucciones</a>
                         </li>
                         <li>
-                          <a href="#">Course of Creative Art</a>
-                          <p class="date">Dec 18, 2015</p>
+                          <a href="{{ route('about') }}">Nosotros</a>
                         </li>
                         <li>
-                          <a href="#">Course of Creative Art</a>
-                          <p class="date">Dec 18, 2015</p>
+                          <a href="{{ route('contact') }}">Contacto</a>
                         </li>
                       </ul>
                     </div>
@@ -262,12 +249,12 @@
                     <div class="fo-twitter-feed-container">
                       <ul>
                         <li>
-                          <a href="#" class="user-name">@John Doe</a>
-                          <p>Aliquam nec elementum odio, non loare congue ligula curabitur. Nulla venenatis malesuada diam volutpat vulputate. Suspendisse et tortor mauris.</p>
+                          <a href="#" class="user-name">@Jahen222</a>
+                          <p>Muy divertida, poder ver los perros de los demas es muy divertido.</p>
                         </li>
                         <li>
-                          <a href="#" class="user-name">@John Doe</a>
-                          <p>Duis id nulla sodales, dapibus enim sed. Vestibulum lobortis sed sit amet gravida.</p>
+                          <a href="#" class="user-name">@HenryJM</a>
+                          <p>En algun punto los perros me hacen una persona mas feliz, espero que puedan llegar a 1000000.</p>
                         </li>
                       </ul>
                     </div>
@@ -275,15 +262,15 @@
                 </div>
                 <div class="col-md-3 col-sm-4">
                   <div class="footer-top-menu">
-                    <h3 class="widget-title">FOLLOW US @ INSTAGRAM</h3>
+                    <h3 class="widget-title">Siguenos en @doggymillion</h3>
                     <div class="blog-flickr">
                       <ul>
-                        <li><a href="#"><img src="{{ asset('html_front/img/blog/flickr/1.jpg') }}" alt=""></a></li>
-                        <li><a href="#"><img src="{{ asset('html_front/img/blog/flickr/2.jpg') }}" alt=""></a></li>
-                        <li><a href="#"><img src="{{ asset('html_front/img/blog/flickr/3.jpg') }}" alt=""></a></li>
-                        <li><a href="#"><img src="{{ asset('html_front/img/blog/flickr/4.jpg') }}" alt=""></a></li>
-                        <li><a href="#"><img src="{{ asset('html_front/img/blog/flickr/5.jpg') }}" alt=""></a></li>
-                        <li><a href="#"><img src="{{ asset('html_front/img/blog/flickr/6.jpg') }}" alt=""></a></li>
+                        <li><a href="https://instagram.com/download/?r=7555864405"><img src="{{ asset('assets/Imagenes/ins1.jpg') }}" alt=""></a></li>
+                        <li><a href="https://instagram.com/download/?r=7555864405"><img src="{{ asset('assets/Imagenes/ins2.jpg') }}" alt=""></a></li>
+                        <li><a href="https://instagram.com/download/?r=7555864405"><img src="{{ asset('assets/Imagenes/ins3.jpg') }}" alt=""></a></li>
+                        <li><a href="https://instagram.com/download/?r=7555864405"><img src="{{ asset('assets/Imagenes/ins4.jpg') }}" alt=""></a></li>
+                        <li><a href="https://instagram.com/download/?r=7555864405"><img src="{{ asset('assets/Imagenes/ins5.jpg') }}" alt=""></a></li>
+                        <li><a href="https://instagram.com/download/?r=7555864405"><img src="{{ asset('assets/Imagenes/ins6.jpg') }}" alt=""></a></li>
                       </ul>
                     </div>
                   </div>
@@ -298,7 +285,7 @@
               <div class="row">
                 <div class="col-md-12 text-center">
                   <div class="copyright-wrap text-center">
-                    <p>&copy; 2016 <a href="http://bootexperts.com/">Bootexperts.</a> All Rights Reserved</p>
+                    <p>&copy; 2018 Site By: <a href="">henryjaimes.peli@gmail.com</a>, All Rights Reserved</p>
                   </div>
                 </div>
               </div>
