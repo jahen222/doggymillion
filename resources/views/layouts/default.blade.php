@@ -3,14 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Doggymillion</title>
-        <meta name="description" content="Buscamos a través de nuestra web fomentar la buena convivencia y Unión de propietarios y mascotas además de crear una base de datos perpetua de 1 millón de fotos de nuestros perritos en la red Internet! Por sólo 1$ Por cada foto.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <meta property="og:title" content="Doggymillion" />
-        <meta property="og:type" content="article" />
-        <meta property="og:image" content="{{ asset('assets/256_pixels/1_Primary_logo_on_transparent_256_v2.png') }}" />
-        <meta property="og:description" content="Buscamos a través de nuestra web fomentar la buena convivencia y Unión de propietarios y mascotas además de crear una base de datos perpetua de 1 millón de fotos de nuestros perritos en la red Internet! Por sólo 1$ Por cada foto." />
 
 		<!-- favicon
 		============================================ -->

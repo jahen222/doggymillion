@@ -3,14 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Doggymillion</title>
-        <meta name="description" content="Buscamos a través de nuestra web fomentar la buena convivencia y Unión de propietarios y mascotas además de crear una base de datos perpetua de 1 millón de fotos de nuestros perritos en la red Internet! Por sólo 1$ Por cada foto.">
+        <title>{{ $dog->name }}</title>
+        <meta name="description" content="{{ $dog->bio }}">
+        <meta property="og:site_name" content="{{ $dog->name }}">
+        <meta property="og:title" content="{{ $dog->name }}" >
+        <meta property="og:type" content="website" >
+        <meta property="og:image" itemprop="image" content="{{ route('dogimage', ['image' => $dog->image]) }}" >
+        <meta property="og:description" content="{{ $dog->bio }}" >
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <meta itemprop="og:title" property="og:title" content="{{ $dog->name }}" />
-        <meta itemprop="og:type" property="og:type" content="article" />
-        <meta itemprop="og:image" property="og:image" content="{{ Html::image(route('dogimage', ['image' => $dog->image]), 'a picture', array('width' => '820', 'height' => '572')) }}" />
-        <meta itemprop="og:description" property="og:description" content="{{ $dog->bio }}" />
 		<!-- favicon
 		============================================ -->
         <link rel="shortcut icon" type="image/x-icon" href="{{ asset('html_front/img/favicon.ico') }}">
