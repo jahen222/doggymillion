@@ -57,8 +57,7 @@ class PaypalController extends Controller
 
         $imageName = time().'.'.$data->file('image')->getClientOriginalExtension();
         $data->file('image')->move(base_path().'/public/assets/perros/', $imageName);
-        \Session::put('paypal_payment_id', $payment->getId());
-
+        
         \Session::put('name', $data->name);
         \Session::put('image', $imageName);
         \Session::put('race_id', $data->race_id);
@@ -163,7 +162,7 @@ class PaypalController extends Controller
 
       $payerId = \Input::get('PayerID');
       $token = \Input::get('token');
-      
+
       $name = \Session::get('name');
       $image = \Session::get('image');
       $race_id = \Session::get('race_id');
