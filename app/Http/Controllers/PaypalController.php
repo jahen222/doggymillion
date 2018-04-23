@@ -196,7 +196,12 @@ class PaypalController extends Controller
         $dog->image = $image;
         $dog->race_id = $race_id;
         $dog->bio = $bio;
-        $dog->gender = $gender;
+        if ($gender==1){
+          $dog->gender = 'Hembra';
+        }
+        else{
+          $dog->gender = 'Macho';
+        }
         $dog->age = $age;
         $dog->dead = $dead;
         $dog->country_id = $country_id;
