@@ -21,7 +21,7 @@ class CreateDogsTable extends Migration
             $table->foreign('race_id')->references('id')->on('races')->onDelete('cascade');
             $table->text('bio')->nullable();
       			$table->string('gender')->nullable();
-      			$table->integer('age')->nullable()->unsigned();
+      			$table->integer('age')->nullable();
             $table->boolean('dead')->default(0);
       			$table->integer('country_id')->unsigned()->index();
             $table->foreign('country_id')->references('id')->on('countries')->onDelete('cascade');

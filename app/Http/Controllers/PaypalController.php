@@ -80,9 +80,9 @@ class PaypalController extends Controller
 
         //foreach($cart as $producto){
           $item = new Item();
-          $item->setName('Inscripcion doggymillion')
+          $item->setName('Inscripcion doggymillon')
           ->setCurrency($currency)
-          ->setDescription('Compra de un espacio para la pagina de doggymillion.')
+          ->setDescription('Compra de un espacio para la pagina de doggymillon.')
           //->setQuantity($producto->quantity)
           ->setQuantity("1")
           ->setPrice("1");
@@ -108,7 +108,7 @@ class PaypalController extends Controller
         $transaction = new Transaction();
         $transaction->setAmount($amount)
           ->setItemList($item_list)
-          ->setDescription('Pedido a prueba');
+          ->setDescription('Pedido de espacio');
 
         $redirect_urls = new RedirectUrls();
         $redirect_urls->setReturnUrl(\URL::route('payment.status'))

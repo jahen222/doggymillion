@@ -135,6 +135,84 @@ class RaceSeeder extends DatabaseSeeder
             'owner_name' => 'Merly Jaimes',
             'owner_email' => 'merlyjaimes94@gmail.com'
           ]);
+
+          $dog = Dog::create([
+            'name' => 'Draco',
+            'image' => '1.jpg',
+            'race_id' => 38,
+            'bio' => 'Soy grande pero no dejo de ser el bebé de mamá mis hobbies son comer, dormir, despertar a todos con mis ronquidos Y apapachar a mi familia humana. También me gustan comer hojas :) pero no le digan a mi mamá.',
+            'gender' => 'Macho',
+            'age' => 4,
+            'dead' => false,
+            'country_id' => 26,
+            'owner_name' => 'Macarena Plaza',
+            'owner_email' => 'maquis_fa13_1@hotmail.com'
+          ]);
+
+          $dog = Dog::create([
+            'name' => 'Olivia',
+            'image' => '2.jpg',
+            'race_id' => 23,
+            'bio' => 'Dulce, tierna, cariñosa y obsesionada con dar besos, en ese cuerpito super rechonchon y gordo se siente la protectora de la casa XD  es una bola de amor.',
+            'gender' => 'Hembra',
+            'age' => 1,
+            'dead' => false,
+            'country_id' => 26,
+            'owner_name' => 'Macarena Plaza',
+            'owner_email' => 'maquis_fa13_1@hotmail.com'
+          ]);
+
+          $dog = Dog::create([
+            'name' => 'Bruna',
+            'image' => '3.jpg',
+            'race_id' => 23,
+            'bio' => 'Tengo 8 meses y acabo de convertirme en señorita. Tengo 3 hermanos con los que juego toda la noche (duermo todo el dia) me encanta correr de un lado al otro y morder los cachetes de mi hermana Olivia cuando mi mamá no está mirando.',
+            'gender' => 'Hembra',
+            'age' => 0,
+            'dead' => false,
+            'country_id' => 26,
+            'owner_name' => 'Macarena Plaza',
+            'owner_email' => 'maquis_fa13_1@hotmail.com'
+          ]);
+
+          $dog = Dog::create([
+            'name' => 'Rodolfo',
+            'image' => '4.jpg',
+            'race_id' => 23,
+            'bio' => 'Soy un poco aburrido y mi actividad preferida es pasarme horas mordiendo lo q pueda, zapatos, paredes, recipientes, muebles, etc. Tengo 3 Hermanas  que me vuelven loco! No es fácil ser el hombre de la casa XD y aún no levantó la pata para orinar.',
+            'gender' => 'Macho',
+            'age' => 1,
+            'dead' => false,
+            'country_id' => 26,
+            'owner_name' => 'Macarena Plaza',
+            'owner_email' => 'maquis_fa13_1@hotmail.com'
+          ]);
+
+          $dog = Dog::create([
+            'name' => 'Sofia',
+            'image' => '5.jpg',
+            'race_id' => 23,
+            'bio' => 'Tengo 9 meses soy hiperactiva, cariñosa y un poco loca. me encanta jugar con mis hermanos y también salir a pasear al parque  con mis papás humanos, para hacer nuevos amigos perrunos aunque mi hiperactividad los espanta.. soy muy emocional y juguetona.',
+            'gender' => 'Hembra',
+            'age' => 0,
+            'dead' => false,
+            'country_id' => 26,
+            'owner_name' => 'Sebastian',
+            'owner_email' => 'hucor_666@hotmail.com'
+          ]);
+
+          $dog = Dog::create([
+            'name' => 'Pulga',
+            'image' => '6.jpg',
+            'race_id' => 92,
+            'bio' => 'hermosa, hermosa, muy hermosa y perfecta',
+            'gender' => 'Hembra',
+            'age' => 4,
+            'dead' => false,
+            'country_id' => 237,
+            'owner_name' => 'Chelo Garcia',
+            'owner_email' => 'henryjaimes.peli@gmail.com'
+          ]);
         //}
     }
 }
