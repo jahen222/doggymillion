@@ -7,7 +7,7 @@ Paises
 @stop
 
 {{-- content --}}
-@section('content')
+@section('content') 
   <div class="page-header-v1 bg-1 overlay-bg  text-center">
     <div class="page-header-inner">
       <p class="page-category">Lista de canes</p>
@@ -21,7 +21,7 @@ Paises
       <div class="container">
         <div class="list-group">
           @foreach($countries as $country)
-            @if(COUNT($country->dogs)>1)
+            @if(COUNT($country->dogs)>=1)
               <a href="{{ route('pais', ['id' => $country->id]) }}" class="list-group-item">{{ $country->name }} ({{ COUNT($country->dogs) }})</a>
             @endif
           @endforeach
