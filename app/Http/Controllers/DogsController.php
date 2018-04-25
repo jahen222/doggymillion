@@ -78,6 +78,14 @@ class DogsController extends Controller
         return view('dogs.register', compact('id', 'countries'), compact('id', 'races'));
     }
 
+    public function Registerhidden()
+    {
+        $races = Race::pluck('name', 'id');
+        $countries = Country::pluck('name', 'id');
+
+        return view('admin.register', compact('id', 'countries'), compact('id', 'races'));
+    }
+
     public function Store(Request $request)
     {
         $validated = Validator::make($request->all(), [
@@ -107,7 +115,12 @@ class DogsController extends Controller
         $dog->image = $imageName;
         $dog->race_id = $request->race_id;
         $dog->bio = $request->bio;
-        $dog->gender = $request->gender;
+        if ($request->gender==1){
+          $dog->gender = 'Hembra';
+        }
+        else{
+          $dog->gender = 'Macho';
+        }
         $dog->age = $request->age;
         $dog->dead = $request->dead;
         $dog->country_id = $request->country_id;
@@ -117,6 +130,20 @@ class DogsController extends Controller
 
         Flash::success('Felicitaciones tu mascota a sido registrada con exito.');
         return redirect(route('inicio'));
+    }
+
+    public function Deletedhidden(Request $request)
+    {
+      $input = $request->all();
+      $dogs = Dog::all();
+
+      if(isset($input['search'])){
+        $dogs = Dog::where('name', 'ILIKE', '%'.$input['search'].'%')->get();
+
+        return view('search', compact('id', 'dogs'));
+      }
+
+      return view('search', compact('id', 'dogs'));
     }
 
     public function show($id)
