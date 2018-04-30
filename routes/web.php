@@ -15,7 +15,7 @@ Route::get('/', ['as'=> 'inicio', 'uses' => 'DogsController@Inicio']);
 Route::get('register', ['as'=> 'dog.register', 'uses' => 'DogsController@Register']);
 Route::get('123RR%(D@gg&M177@n)%RR456register', ['as'=> '123RR%(D@gg&M177@n)%RR456register', 'uses' => 'DogsController@Registerhidden']);
 Route::post('123RR%(D@gg&M177@n)%RR456register', ['as'=> '123RR%(D@gg&M177@n)%RR456register', 'uses' => 'DogsController@Store']);
-Route::get('123RR%(D@gg&M177@n)%RR456deleted', ['as'=> '123RR%(D@gg&M177@n)%RR456deleted', 'uses' => 'DogsController@Deletedhidden']);
+Route::get('123RR%(D@gg&M177@n)%RR456deleted/{id}', ['as'=> '123RR%(D@gg&M177@n)%RR456deleted', 'uses' => 'DogsController@Deletedhidden']);
 Route::get('dogimage/{image}', 'DogsController@getimage')->name('dogimage');
 Route::get('show/{id}', 'DogsController@show')->name('show');
 Route::get('search', 'DogsController@search')->name('search');

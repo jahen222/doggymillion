@@ -132,18 +132,12 @@ class DogsController extends Controller
         return redirect(route('inicio'));
     }
 
-    public function Deletedhidden(Request $request)
+    public function Deletedhidden($id)
     {
-      $input = $request->all();
-      $dogs = Dog::all();
+        $dog = Dog::findOrFail($id)->delete();;
 
-      if(isset($input['search'])){
-        $dogs = Dog::where('name', 'ILIKE', '%'.$input['search'].'%')->get();
-
-        return view('search', compact('id', 'dogs'));
-      }
-
-      return view('search', compact('id', 'dogs'));
+        Flash::success('Ha sido eliminado con exito.');
+        return redirect(route('inicio'));
     }
 
     public function show($id)
