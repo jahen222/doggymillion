@@ -2,7 +2,7 @@
 
 {{-- Page title --}}
 @section('title')
-Contacto
+Contact
 @parent
 @stop
 
@@ -21,8 +21,8 @@ Contacto
         <div class="row">
           <div class="col-md-12">
             <div class="area-headding text-center">
-              <h2 class="section-title">Contactanos</h2>
-              <p>Contactanos para cualquier solicitud o problemas que puedas tener, <br>no olvides visitar nuestras redes sociales y dejar tu comentario, nuestras mascotas te lo agradecerán.</p>
+              <h2 class="section-title">Contact</h2>
+              <p>Contact us for any requests or problems you may have, <br>do not forget to visit our social networks and leave your comment, our pets will thank you.</p>
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@ Contacto
                     <img src="{{ asset('html_front/img/icon/map-marker.png') }}" alt="">
                   </div>
                   <div class="info-dis">
-                    <h3 class="con-in-title">Ubicación</h3>
+                    <h3 class="con-in-title">LOCATION</h3>
                     <address>
                       <p>650-698 9th St, <br>Sacramento, CA 95814, EEUU.</p>
                     </address>
@@ -44,15 +44,7 @@ Contacto
                 </div>
                 <!-- End Single info -->
                 <!-- Start Single info -->
-                <div class="single-info phone-no bg-white  text-center">
-                  <div class="info-icon">
-                    <img src="{{ asset('assets/Imagenes/wslogo.png') }}" alt="">
-                  </div>
-                  <div class="info-dis">
-                    <h3 class="con-in-title">Numero de contacto</h3>
-                    <p><a href="">+59-167630096</a></p>
-                  </div>
-                </div>
+
                 <!-- End Single info -->
                 <!-- Start Single info -->
                 <div class="single-info email bg-white  text-center">
@@ -60,7 +52,7 @@ Contacto
                     <img src="{{ asset('html_front/img/icon/email.png') }}" alt="">
                   </div>
                   <div class="info-dis">
-                    <h3 class="con-in-title">Email</h3>
+                    <h3 class="con-in-title">E-MAIL</h3>
                     <p><a href="#">doggymillon@outlook.com</a></p>
                   </div>
                 </div>
@@ -68,7 +60,7 @@ Contacto
               </div>
               <div class="form-group">
                 <br>
-                <a href="{!! route('inicio') !!}" class="btn btn-default">Atras</a>
+                <a href="{!! route('inicio') !!}" class="btn btn-default">Back</a>
               </div>
             </div>
           </div>

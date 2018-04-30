@@ -68,100 +68,99 @@
     </head>
     <body>
       <div class="wrapper home-v2">
-              <!-- Start Header Area -->
-      	<div class="spectar"></div>
-        <header id="header" class="solid-bg-header clear">
-          <div class="header-v2">
-            <!-- Start Header Top -->
-            <div class="header-top clear">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-7 hidden-xs hidden-sm">
-                    <div class="header-top-left header-top-info">
-                      <a href="{{ route('dog.register') }}" class="btn btn-success" style="background-color: #07b193; border-color:#07b193;">Registra tu Perro</a>
-                      <p><a href="#"><i class="fa fa-phone"></i>+59-167630096</a></p>
-                      <p><a href="#"><i class="fa fa-envelope"></i>doggymillon@outlook.com</a></p>
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <div class="header-top-right pull-right">
-                      <ul>
-                        <li>
-                          <div id="google_translate_element"></div>
-                        </li>
-                        <li class="search-bar">
-                          <div class="search-form">
-                            <form action="{{ route('search') }}">
-                              <button type="submit"><i class="fa fa-search"></i></button>
-                              <input type="text" placeholder="Buscador" name="search">
-                            </form>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+        <!-- Start Header Area -->
+  <div class="spectar"></div>
+  <header id="header" class="solid-bg-header clear">
+    <div class="header-v2">
+      <!-- Start Header Top -->
+      <div class="header-top clear">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 hidden-xs hidden-sm">
+              <div class="header-top-left header-top-info">
+                <a href="{{ route('dog.register') }}" class="btn btn-success" style="background-color: #07b193; border-color:#07b193;">Register your dog</a>
+                <p><a href="#"><i class="fa fa-envelope"></i>doggymillon@outlook.com</a></p>
               </div>
             </div>
-            <!-- End Header Top -->
-            <!-- Start Header Bottom -->
-            <div class="header-bottom">
-              <div class="container">
-                <div class="row hidden-xs hidden-sm">
-                  <!-- Start Main Menu -->
-                    <div class="col-md-12 text-center">
-                        <div class="menu-wrap">
-                            <nav class="primary-menu">
-                                <ul>
-                                    <li class="current"><a href="{{ route('inicio') }}">Inicio</a></li>
-                                    <li><a href="{{ route('about') }}">Nosotros</a></li>
-                                    <li><a href="{{ route('paises') }}">Países</a></li>
-                                    <li><a href="{{ route('razas') }}">Razas</a></li>
-                                    <li class="menu-logo-2">
-                                      <div class="header-logo-2">
-                                        <a href="{{ route('inicio') }}"><img src="{{ asset('assets/256_pixels/1_Primary_logo_on_transparent_256_v2.png') }}" alt="main logo" /></a>
-                                      </div>
-                                    </li>
-                                    <li><a href="https://www.facebook.com/Doggymillon-190986285034679/">Facebook</a></li>
-                                    <li><a href="https://instagram.com/download/?r=7555864405">Instagram</a></li>
-                                    <li><a href="{{ route('instruction') }}">Instrucciones</a></li>
-                                    <li><a href="{{ route('contact') }}">Contacto</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+            <div class="col-md-5">
+              <div class="header-top-right pull-right">
+                <ul>
+                  <li>
+                    <div id="google_translate_element"></div>
+                  </li>
+                  <li class="search-bar">
+                    <div class="search-form">
+                      <form action="{{ route('search') }}">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                        <input type="text" placeholder="Search" name="search">
+                      </form>
                     </div>
-                  <!-- End Main Menu -->
-                </div>
-                  <div class="col-sm-3 hidden-md hidden-lg">
-                    <div class="mobile-logo">
-                      <a href="{{ route('inicio') }}"><img src="{{ asset('assets/256_pixels/mobile.png') }}" alt="main logo" /></a>
-                    </div>
-                  </div>
-                  <div class="col-sm-9 hidden-md hidden-lg">
-                    <!-- Main Menu End -->
-                    <div class='mobile-menu-area'>
-                      <nav id="mobile-menu">
-                        <ul>
-                          <li><a href="{{ route('inicio') }}">Inicio</a></li>
-                          <li><a href="{{ route('about') }}">Nosotros</a></li>
-                          <li><a href="{{ route('paises') }}">Países</a></li>
-                          <li><a href="{{ route('razas') }}">Razas</a></li>
-                          <li><a href="https://www.facebook.com/Doggymillon-190986285034679/">Facebook</a></li>
-                          <li><a href="https://instagram.com/download/?r=7555864405">Instagram</a></li>
-                          <li><a href="{{ route('instruction') }}">Instrucciones</a></li>
-                          <li><a href="{{ route('contact') }}">Contacto</a></li>
-                        </ul>
-                      </nav>
-                    </div>
-                    <!-- Main Menu End -->
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
             </div>
-            <!-- End Header Bottom -->
           </div>
-        </header>
-        <!-- End Header Area -->
+        </div>
+      </div>
+      <!-- End Header Top -->
+      <!-- Start Header Bottom -->
+      <div class="header-bottom">
+        <div class="container">
+          <div class="row hidden-xs hidden-sm">
+            <!-- Start Main Menu -->
+              <div class="col-md-12 text-center">
+                  <div class="menu-wrap">
+                      <nav class="primary-menu">
+                          <ul>
+                              <li class="current"><a href="{{ route('inicio') }}">Home</a></li>
+                              <li><a href="{{ route('about') }}">Us</a></li>
+                              <li><a href="{{ route('paises') }}">COUNTRIES</a></li>
+                              <li><a href="{{ route('razas') }}">RACES</a></li>
+                              <li class="menu-logo-2">
+                                <div class="header-logo-2">
+                                  <a href="{{ route('inicio') }}"><img src="{{ asset('assets/256_pixels/1_Primary_logo_on_transparent_256_v2.png') }}" alt="main logo" /></a>
+                                </div>
+                              </li>
+                              <li><a href="https://www.facebook.com/Doggymillon-190986285034679/">Facebook</a></li>
+                              <li><a href="https://instagram.com/download/?r=7555864405">Instagram</a></li>
+                              <li><a href="{{ route('instruction') }}">INSTRUCTIONS</a></li>
+                              <li><a href="{{ route('contact') }}">CONTACT</a></li>
+                          </ul>
+                      </nav>
+                  </div>
+              </div>
+            <!-- End Main Menu -->
+          </div>
+            <div class="col-sm-3 hidden-md hidden-lg">
+              <div class="mobile-logo">
+                <a href="{{ route('inicio') }}"><img src="{{ asset('assets/256_pixels/mobile.png') }}" alt="main logo" /></a>
+              </div>
+            </div>
+            <div class="col-sm-9 hidden-md hidden-lg">
+              <!-- Main Menu End -->
+              <div class='mobile-menu-area'>
+                <nav id="mobile-menu">
+                  <ul>
+                    <li><a href="{{ route('inicio') }}">Home</a></li>
+                    <li><a href="{{ route('about') }}">Us</a></li>
+                    <li><a href="{{ route('paises') }}">COUNTRIES</a></li>
+                    <li><a href="{{ route('razas') }}">RACES</a></li>
+                    <li><a href="https://www.facebook.com/Doggymillon-190986285034679/">Facebook</a></li>
+                    <li><a href="https://instagram.com/download/?r=7555864405">Instagram</a></li>
+                    <li><a href="{{ route('instruction') }}">INSTRUCTIONS</a></li>
+                    <li><a href="{{ route('contact') }}">CONTACT</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- Main Menu End -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Header Bottom -->
+    </div>
+  </header>
+  <!-- End Header Area -->
 
   <section class="course-details-area padding100 bg-gray">
     <div class="container">
@@ -177,12 +176,12 @@
             </div>
             <div class="course-content">
               <h2 class="course-title"><a href="#">{{ $dog->name }}</a></h2>
-              <div class="author"><a href="#">Dueño</a> {{ $dog->owner_name }} <a href="#">Bio:</a> {{ $dog->bio }}</div>
+              <div class="author"><a href="#">Owner</a> {{ $dog->owner_name }} <a href="#">Bio:</a> {{ $dog->bio }}</div>
             </div>
             <div class="rating">
               <ul>
                 <li>
-                  <p><span><i class="fa fa-book"></i></span>Correo: {{ $dog->owner_email }}</p>
+                  <p><span><i class="fa fa-book"></i></span>Email: {{ $dog->owner_email }}</p>
                 </li>
               </ul>
             </div>
@@ -192,18 +191,18 @@
         <div class="col-md-4 right-side-wrap">
           <div class="right-side-inner">
             <aside class="widget wg-courses-detail">
-              <h3 class="sidebar-title">Detalles</h3>
+              <h3 class="sidebar-title">Details</h3>
               <ul class="wg-courses-detail-menu">
-                <li><h5>Edad <span>{{ $dog->age }} años</span></h5></li>
-                <li><h5>Estado <span>@if( $dog->dead  =='1') Muerto @else Vivo @endif</span></h5></li>
-                <li><h5>Genero <span>{{ $dog->gender }}</span></h5></li>
-                <li><h5>Raza <span>{{ $dog->race->name }}</span></h5></li>
-                <li><h5>País <span>{{ $dog->country->name }}</span></h5></li>
+                <li><h5>Age <span>{{ $dog->age }} years</span></h5></li>
+                <li><h5>Status <span>@if( $dog->dead  =='1') Dead @else Life @endif</span></h5></li>
+                <li><h5>Gender <span>{{ $dog->gender }}</span></h5></li>
+                <li><h5>Race <span>{{ $dog->race->name }}</span></h5></li>
+                <li><h5>Country <span>{{ $dog->country->name }}</span></h5></li>
               </ul>
             </aside>
             <div class="form-group">
               <br>
-              <a href="{!! route('inicio') !!}" class="btn btn-default">Atras</a>
+              <a href="{!! route('inicio') !!}" class="btn btn-default">Back</a>
             </div>
           </div>
         </div>

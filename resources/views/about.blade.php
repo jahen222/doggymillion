@@ -2,7 +2,7 @@
 
 {{-- Page title --}}
 @section('title')
-Nosotros
+Us
 @parent
 @stop
 
@@ -13,8 +13,8 @@ Nosotros
   <div class="page-content">
     <div class="page-header-v1 bg-1 overlay-bg  text-center">
       <div class="page-header-inner">
-        <p class="page-category">Acerca de</p>
-        <h2 class="page-title">Nosotros</h2>
+        <p class="page-category">ABOUT</p>
+        <h2 class="page-title">US</h2>
         <div class="breadcrumbs">
         </div>
       </div>
@@ -27,21 +27,21 @@ Nosotros
             <div class="our-school-inner">
               <div class="col-md-6">
                 <div class="school-info padding-t50">
-                  <h2 class="section-title">NUESTRA INTENCION</h2>
-                  <p align="justify">Somos una empresa amante de los perros! Que buscamos a través de nuestra web fomentar la buena convivencia y Unión  de propietarios y mascotas además de crear una base de datos perpetua  de 1 millón de fotos de nuestros perritos en la red Internet! Por sólo 1$ Por cada foto.</p>
+                  <h2 class="section-title">OUR INTENTION</h2>
+                  <p align="justify">We are a company of dogs lover! We look through our website and encourage conviviality Union and pet owners addition to creating a perpetual data base 1 million pictures of our puppies on the Internet! For only $ 1 for each photo.</p>
 
-                  <p align="justify">Nuestra visión es formar una comunidad global de ayuda y conocimiento enfocado a nuestras mascotas caninas teniendo claro que son parte de nuestra familia.</p>
+                  <p align="justify">Our vision is to build a global community of support and knowledge focused on having our canine pets clearly are part of our family.</p>
 
-                  <p align="justify">Una vez llena la base de datos de nuestra web donaremos parte de los fondos a 1 asociacion protectora de animales del país que mayor cantidad de miembros tengan dentro de nuestro sitio, para poder ayudar a perritos en situación de calle.</p>
+                  <p align="justify">Once the database fills our website we will donate part of the proceeds 1 animal protection organization in the country that most members have within our site, to help homeless dogs.</p>
 
-                  <p align="justify">Además al completar nuestra base de datos también  donaremos 50000 usd a uno de nuestros miembros elegido al azar por nuestra comunidad de usuarios! </p>
+                  <p align="justify">In addition to completing our database also we donate usd 50000 one of our members chosen at random by our user community!</p>
                   <br />
-                  <h3>Que esperas?</h3>
+                  <h3>What are you waiting for?</h3>
                   <br />
-                  <a href="{{ route('dog.register') }}" class="btn btn-success" style="background-color: #07b193; border-color:#07b193;">Registra tu Perro</a>
+                  <a href="{{ route('dog.register') }}" class="btn btn-success" style="background-color: #07b193; border-color:#07b193;">Register your dog</a>
                   <br />
                   <br />
-                  <a href="{!! route('inicio') !!}" class="btn btn-default">Atras</a>
+                  <a href="{!! route('inicio') !!}" class="btn btn-default">Back</a>
 
                 </div>
               </div>

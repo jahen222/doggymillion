@@ -116,10 +116,10 @@ class DogsController extends Controller
         $dog->race_id = $request->race_id;
         $dog->bio = $request->bio;
         if ($request->gender==1){
-          $dog->gender = 'Hembra';
+          $dog->gender = 'Female';
         }
         else{
-          $dog->gender = 'Macho';
+          $dog->gender = 'Male';
         }
         $dog->age = $request->age;
         $dog->dead = $request->dead;

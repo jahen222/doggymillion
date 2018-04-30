@@ -2,7 +2,7 @@
 
 {{-- Page title --}}
 @section('title')
-Pais
+COUNTRY
 @parent
 @stop
 
@@ -10,7 +10,7 @@ Pais
 @section('content')
   <div class="page-header-v1 bg-2 overlay-bg  text-center">
     <div class="page-header-inner">
-      <p class="page-category">País</p>
+      <p class="page-category">COUNTRY</p>
       <h2 class="page-title">{{ $country->name }}</h2>
       <div class="breadcrumbs">
       </div>
@@ -30,7 +30,7 @@ Pais
 				</div>
         <div class="form-group">
           <br>
-          <a href="{!! route('paises') !!}" class="btn btn-default">Atras</a>
+          <a href="{!! route('paises') !!}" class="btn btn-default">Back</a>
         </div>
       </div>
     </section>

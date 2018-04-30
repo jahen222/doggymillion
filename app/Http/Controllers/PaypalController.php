@@ -197,10 +197,10 @@ class PaypalController extends Controller
         $dog->race_id = $race_id;
         $dog->bio = $bio;
         if ($gender==1){
-          $dog->gender = 'Hembra';
+          $dog->gender = 'Female';
         }
         else{
-          $dog->gender = 'Macho';
+          $dog->gender = 'Male';
         }
         $dog->age = $age;
         $dog->dead = $dead;
@@ -209,10 +209,10 @@ class PaypalController extends Controller
         $dog->owner_email = $owner_email;
         $dog->save();
 
-        Flash::success('Compra realizada de forma correcta y su perro registrado con éxito');
+        Flash::success('Purchase made correctly and your dog registered successfully.');
         return redirect(route('inicio'));
       }
-      Flash::error('La compra fue cancelada.');
+      Flash::error('The purchase was canceled.');
       return \Redirect::route('inicio');
     }
 }

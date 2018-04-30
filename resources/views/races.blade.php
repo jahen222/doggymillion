@@ -2,7 +2,7 @@
 
 {{-- Page title --}}
 @section('title')
-Razas
+Races
 @parent
 @stop
 
@@ -10,8 +10,8 @@ Razas
 @section('content')
   <div class="page-header-v1 bg-1 overlay-bg  text-center">
     <div class="page-header-inner">
-      <p class="page-category">Lista de canes</p>
-      <h2 class="page-title">POR RAZAS</h2>
+      <p class="page-category">LIST OF DOGS</p>
+      <h2 class="page-title">BY RACES</h2>
       <div class="breadcrumbs">
       </div>
     </div>
@@ -28,7 +28,7 @@ Razas
         </div>
         <div class="form-group">
           <br>
-          <a href="{!! route('inicio') !!}" class="btn btn-default">Atras</a>
+          <a href="{!! route('inicio') !!}" class="btn btn-default">Back</a>
         </div>
       </div>
     </section>

@@ -2,7 +2,7 @@
 
 {{-- Page title --}}
 @section('title')
-Inicio
+Home
 @parent
 @stop
 
@@ -24,11 +24,11 @@ Inicio
 							<div class="slider-content">
 								<!-- layer 1 -->
 								<div class="layer-1-1">
-									<h5 class="title1">Registra a tu can por tan solo 1$</h5>
+									<h5 class="title1">Register your dog for only $1</h5>
 								</div>
 								<!-- layer 2 -->
 								<div class="layer-1-2">
-									<h5 id="word" class="title2"><span>Convierte a tu perro en una pieza de la historia en Internet por 1$</span></h5>
+									<h5 id="word" class="title2"><span>TURN YOUR DOG INTO A PIECE OF HISTORY ON THE INTERNET FOR $1</span></h5>
 								</div>
 								<!-- layer 3
 								<div class="layer-1-3">
@@ -36,7 +36,7 @@ Inicio
 								</div>
 								<!-- layer 4 -->
 								<div class="layer-1-4">
-									<a href="{{ route('dog.register') }}" class="estut-btn active hidden-sm hidden-xs">Registra tu Perro</a>
+									<a href="{{ route('dog.register') }}" class="estut-btn active hidden-sm hidden-xs">Register your dog</a>
 								</div>
 							</div>
 						</div>
@@ -51,11 +51,11 @@ Inicio
 							<div class="slider-content">
 								<!-- layer 1 -->
 								<div class="layer-2-1">
-									<h5 class="title1">Registra a tu can por tan solo 1$</h5>
+									<h5 class="title1">Register your dog for only $1</h5>
 								</div>
 								<!-- layer 2 -->
 								<div class="layer-2-2">
-									<h5 class="title2"><span>Convierte a tu perro en una pieza de la historia en Internet por 1$</span></h5>
+									<h5 class="title2"><span>TURN YOUR DOG INTO A PIECE OF HISTORY ON THE INTERNET FOR $1</span></h5>
 								</div>
 								<!-- layer 3
 								<div class="layer-2-3">
@@ -63,7 +63,7 @@ Inicio
 								</div>
 								<!-- layer 4 -->
 								<div class="layer-2-4">
-									<a href="{{ route('dog.register') }}" class="estut-btn active hidden-sm hidden-xs">Registra tu Perro</a>
+									<a href="{{ route('dog.register') }}" class="estut-btn active hidden-sm hidden-xs">Register your dog</a>
 								</div>
 							</div>
 						</div>
@@ -79,16 +79,16 @@ Inicio
 			<div class="row">
 				<div class="col-md-12">
 					<div class="search-inner fix">
-						<div class="search-title"><a href="{{ route('dog.register') }}" class="btn btn-success" style="background-color: #07b193; border-color:#07b193;">Registra tu Perro</a></div>
+						<div class="search-title"><a href="{{ route('dog.register') }}" class="btn btn-success" style="background-color: #07b193; border-color:#07b193;">Register your dog</a></div>
 						<div class="search-form-3">
 							<form action="{{ route('search') }}">
 								<select>
-									<option value="Nombre">Busca por nombre</option>
+									<option value="Nombre">Search by name</option>
 									<!--<option value="Raza">Busca por raza</option>
 									<option value="País">Busca por país</option>-->
 								</select>
-								<input name="search" type="text" placeholder="Texto"/>
-								<input type="submit" value="Buscar" class="btn btn-default"/>
+								<input name="search" type="text" placeholder="Text"/>
+								<input type="submit" value="Search" class="btn btn-default"/>
 							</form>
 						</div>
 					</div>
@@ -108,25 +108,25 @@ Inicio
 						<div class="s-counter">
 							<div class="counter-box">
 								<h2 class="counter">1000000</h2>
-								<h5 class="count-title">QUEREMOS LLEGAR</h5>
+								<h5 class="count-title">WE WANT TO GET</h5>
 							</div>
 						</div>
 						<div class="s-counter">
 							<div class="counter-box">
 								<h2 class="counter">{{count($dogs)}}</h2>
-								<h5 class="count-title">REGISTRADOS</h5>
+								<h5 class="count-title">RECORDED</h5>
 							</div>
 						</div>
 						<div class="s-counter">
 							<div class="counter-box">
 								<h2 class="counter">{{1000000-count($dogs)}}</h2>
-								<h5 class="count-title">NOS FALTAN</h5>
+								<h5 class="count-title">WE NEED</h5>
 							</div>
 						</div>
 						<div class="s-counter">
 							<div class="counter-box">
 								<h2 class="counter">247</h2>
-								<h5 class="count-title">Paises disponibles</h5>
+								<h5 class="count-title">AVAILABLE COUNTRIES</h5>
 							</div>
 						</div>
 					</div>

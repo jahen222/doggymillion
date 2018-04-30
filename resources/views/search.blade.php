@@ -2,7 +2,7 @@
 
 {{-- Page title --}}
 @section('title')
-Buscar
+Search
 @parent
 @stop
 
@@ -15,16 +15,16 @@ Buscar
 			<div class="row">
 				<div class="col-md-12">
 					<div class="search-inner fix">
-						<div class="search-title"><a href="{{ route('dog.register') }}" class="btn btn-success" style="background-color: #07b193; border-color:#07b193;">Registra tu Perro</a></div>
+						<div class="search-title"><a href="{{ route('dog.register') }}" class="btn btn-success" style="background-color: #07b193; border-color:#07b193;">Register your dog</a></div>
 						<div class="search-form-3">
 							<form action="{{ route('search') }}">
 								<select>
-									<option value="Nombre">Busca por nombre</option>
+									<option value="Nombre">Search by name</option>
 									<!--<option value="Raza">Busca por raza</option>
 									<option value="País">Busca por país</option>-->
 								</select>
-								<input name="search" type="text" placeholder="Texto"/>
-								<input type="submit" value="Buscar" class="btn btn-default"/>
+								<input name="search" type="text" placeholder="Text"/>
+								<input type="submit" value="Search" class="btn btn-default"/>
 							</form>
 						</div>
 					</div>

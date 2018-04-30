@@ -2,7 +2,7 @@
 
 {{-- Page title --}}
 @section('title')
-Registro
+Register
 @parent
 @stop
 
@@ -13,8 +13,8 @@ Registro
   <div class="row padding-t50">
   <section id="contact">
   	<div class="section-content" align="center">
-  		<h1 class="section-header">Registra <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Tu Mascota</span></h1>
-  		<h3>Ayudanos a llegar a 1000000</h3>
+  		<h1 class="section-header">Register <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> your pet</span></h1>
+  		<h3>Help us to reach 1000000</h3>
   	</div>
   	{!! Form::open(array('route' => 'payment', 'files' => true, 'method' => 'post')) !!}
         {{ csrf_field() }}
@@ -22,56 +22,56 @@ Registro
     	<div class="container">
   			<div class="col-md-6 form-line">
             <div class="form-group">
-              <label>NOTA: </label>
-              <h5 style="color: red;">*Todos los campos son obligatorios.</h5>
-              <h5 style="color: red;">*Si tu perro tiene menos de 1 año por favor ingresa 0 en el campo edad.</h5>
+              <label>NOTE: </label>
+              <h5 style="color: red;">*All fields are required.</h5>
+              <h5 style="color: red;">*If your dog has less than 1 year please enter 0 in the old field.</h5>
             </div>
             <div class="form-group">
-              <label>Dueño </label>
-              {!! Form::text('owner_name', null, ['class' => 'form-control',  'placeholder' => 'Nombre del dueño']) !!}
+              <label>Owner </label>
+              {!! Form::text('owner_name', null, ['class' => 'form-control',  'placeholder' => 'Owner name']) !!}
             </div>
   	  			<div class="form-group">
-  	  				<label>Nombre </label>
-              {!! Form::text('name', null, ['class' => 'form-control',  'placeholder' => 'Nombre mascota']) !!}
+  	  				<label>First name </label>
+              {!! Form::text('name', null, ['class' => 'form-control',  'placeholder' => 'Name']) !!}
   		  		</div>
             <div class="form-group">
-  			    	<label>Genero </label>
-              {{ Form::select('gender', ['Macho', 'Hembra'], null, ['class' => 'form-control', 'placeholder' => 'Genero mascota']) }}
+  			    	<label>Gender </label>
+              {{ Form::select('gender', ['Male', 'Famele'], null, ['class' => 'form-control', 'placeholder' => 'Gender']) }}
   			  	</div>
   			  	<div class="form-group">
-  			    	<label>Edad </label>
-              {!! Form::number('age', null, ['class' => 'form-control', 'placeholder' => 'Edad mascota']) !!}
+  			    	<label>Age </label>
+              {!! Form::number('age', null, ['class' => 'form-control', 'placeholder' => 'Age']) !!}
   	  			</div>
             <div class="form-group">
-  	  				<label>Imagen </label>
+  	  				<label>Image </label>
               {!! Form::file('image', null) !!}
   		  		</div>
             <div class="form-group">
-                <label>A muerto? </label>
-                Si {{ Form::radio('dead', 1) }} No {{ Form::radio('dead', 0, true) }}
+                <label>Dead? </label>
+                Yes {{ Form::radio('dead', 1) }} No {{ Form::radio('dead', 0, true) }}
             </div>
-            <a href="{!! route('inicio') !!}" class="btn btn-default">Atras</a>
+            <a href="{!! route('inicio') !!}" class="btn btn-default">Back</a>
   	  		</div>
   	  		<div class="col-md-6">
             <div class="form-group">
               <label>Email</label>
-              {!! Form::text('owner_email', null, ['class' => 'form-control',  'placeholder' => 'Email del dueño']) !!}
+              {!! Form::text('owner_email', null, ['class' => 'form-control',  'placeholder' => 'Email']) !!}
             </div>
             <div class="form-group">
-  			    	<label>Raza </label>
-              {!! Form::select('race_id', $races, null, ['class' => 'form-control', 'placeholder' => 'Raza mascota']) !!}
+  			    	<label>Race </label>
+              {!! Form::select('race_id', $races, null, ['class' => 'form-control', 'placeholder' => 'Race']) !!}
   			  	</div>
   	  			<div class="form-group">
-  	  				<label> Biografía</label>
-              {!! Form::textarea('bio', null, ['class' => 'form-control', 'placeholder' => 'Cuéntanos más sobre tu mascota']) !!}
+  	  				<label> Biography</label>
+              {!! Form::textarea('bio', null, ['class' => 'form-control']) !!}
   	  			</div>
             <div class="form-group">
-              <label> País</label>
-              {!! Form::select('country_id', $countries, null, ['class' => 'form-control', 'placeholder' => 'Seleccione país']) !!}
+              <label> Country</label>
+              {!! Form::select('country_id', $countries, null, ['class' => 'form-control', 'placeholder' => 'Select Country']) !!}
             </div>
   	  			<div>
 
-  	  				<button type="submit" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Registrar</button>
+  	  				<button type="submit" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Register</button>
   	  			</div>
   			</div>
   	   </div>
