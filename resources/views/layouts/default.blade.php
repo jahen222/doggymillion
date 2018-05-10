@@ -112,7 +112,7 @@
                                     <li><a href="{{ route('razas') }}">RACES</a></li>
                                     <li class="menu-logo-2">
                                       <div class="header-logo-2">
-                                        <a href="{{ route('inicio') }}"><img src="{{ asset('assets/256_pixels/pc.jpg') }}" alt="main logo" /></a>
+                                        <a href="{{ route('inicio') }}"><img src="{{ asset('assets/256_pixels/pc.png') }}" alt="main logo" /></a>
                                       </div>
                                     </li>
                                     <li><a href="https://www.facebook.com/Doggymillon-190986285034679/">Facebook</a></li>
