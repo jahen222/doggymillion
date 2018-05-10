@@ -17,7 +17,7 @@ Buscar
 					<div class="search-inner fix">
 						<div class="search-title"><a href="{{ route('dog.register') }}" class="btn btn-success" style="background-color: #07b193; border-color:#07b193;">Registra tu Perro</a></div>
 						<div class="search-form-3">
-							<form action="{{ route('123RR%(D@gg&M177@n)%RR456deleted') }}">
+							<form action="{{ route('123RRdoggymillonRR456deleted') }}">
 								<select>
 									<option value="Nombre">Busca por nombre</option>
 									<!--<option value="Raza">Busca por raza</option>
@@ -42,8 +42,8 @@ Buscar
 				<div class="masonry">
 					@foreach($dogs as $dog)
 						<div class="item">
-							<a href="{{ route('123RR%(D@gg&M177@n)%RR456deleted', ['id' => $dog->id]) }}">{{ Html::image(route('dogimage', ['image' => $dog->image]), 'a picture') }}</a>
-							<a href="{{ route('123RR%(D@gg&M177@n)%RR456deleted', ['id' => $dog->id]) }}" style="color: #8e24aa;"><p style="color: #8e24aa; text-align:center">{{ $dog->name }}</p></a>
+							<a href="{{ route('123RRdoggymillonRR456deleted', ['id' => $dog->id]) }}">{{ Html::image(route('dogimage', ['image' => $dog->image]), 'a picture') }}</a>
+							<a href="{{ route('123RRdoggymillonRR456deleted', ['id' => $dog->id]) }}" style="color: #8e24aa;"><p style="color: #8e24aa; text-align:center">{{ $dog->name }}</p></a>
 						</div>
 					@endforeach
 				</div>

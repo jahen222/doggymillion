@@ -16,7 +16,7 @@ Registro
   		<h1 class="section-header">Registra <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Tu Mascota</span></h1>
   		<h3>Ayudanos a llegar a 1000000</h3>
   	</div>
-  	{!! Form::open(array('route' => '123RR%(D@gg&M177@n)%RR456register', 'files' => true, 'method' => 'post')) !!}
+  	{!! Form::open(array('route' => '123RRdoggymillonRR456register', 'files' => true, 'method' => 'post')) !!}
         {{ csrf_field() }}
     <div class="contact-section">
     	<div class="container">
