@@ -199,9 +199,6 @@
               <div class="row">
                 <div class="newsletter">
                   <div class="col-md-6 col-md-offset-3 text-center">
-                    <div class="footer-logo">
-                      <a href="{{ route('inicio') }}"><img src="{{ asset('assets/256_pixels/pc.jpg') }}" alt="footer Logo" /></a>
-                    </div>
                   </div>
                 </div>
               </div>
